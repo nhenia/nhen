@@ -6,7 +6,6 @@ appcompat = "1.7.1"
 lifecycleViewmodelCompose = "2.9.1"
 material = "1.14.0-alpha02" # Or the latest stable version
 composeBom = "2025.06.01"
-composeCompiler = "1.5.1"
 activityCompose = "1.10.1"
 
 [libraries]
@@ -28,8 +27,8 @@ androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-man
 
 
 
-
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "androidGradlePlugin" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
