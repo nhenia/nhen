@@ -1,0 +1,35 @@
+[versions]
+androidGradlePlugin = "8.11.0" # Or the version you intend to use
+kotlin = "2.2.0" # Or your desired Kotlin version
+ksp = "2.2.0-2.0.2"
+appcompat = "1.7.1"
+lifecycleViewmodelCompose = "2.9.1"
+material = "1.14.0-alpha02" # Or the latest stable version
+composeBom = "2025.06.01"
+composeCompiler = "1.5.1"
+activityCompose = "1.10.1"
+
+[libraries]
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleViewmodelCompose" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+# Compose
+composeBom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-activity = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" } # Example
+
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+
+
+
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
