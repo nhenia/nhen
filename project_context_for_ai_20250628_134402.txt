@@ -1,0 +1,3219 @@
+﻿Android Project Backup for AI Analysis
+
+Generated on: 2025-06-28 13:44:05
+
+Included Modules: app
+
+
+
+--- PROJECT FILE TREE (Status based on module selection) ---
+
+nhen
++-- .git
+|  +-- hooks
+|  |  +-- applypatch-msg.sample
+|  |  +-- commit-msg.sample
+|  |  +-- fsmonitor-watchman.sample
+|  |  +-- post-update.sample
+|  |  +-- pre-applypatch.sample
+|  |  +-- pre-commit.sample
+|  |  +-- pre-merge-commit.sample
+|  |  +-- prepare-commit-msg.sample
+|  |  +-- pre-push.sample
+|  |  +-- pre-rebase.sample
+|  |  +-- pre-receive.sample
+|  |  +-- push-to-checkout.sample
+|  |  +-- sendemail-validate.sample
+|  |  \-- update.sample
+|  +-- info
+|  |  \-- exclude
+|  +-- logs
+|  |  +-- refs
+|  |  |  +-- heads
+|  |  |  |  \-- master
+|  |  |  \-- remotes
+|  |  |     \-- origin
+|  |  |        \-- master
+|  |  \-- HEAD
+|  +-- objects
+|  |  +-- 00
+|  |  |  +-- 223e28d146142b5707ad6a1047bc352bae2f94
+|  |  |  +-- 226ed2fefa3206b16872afa22e4db62888b1da
+|  |  |  +-- ae1d5ee5e24a67c69383c5f2a19480d95e7c9b
+|  |  |  \-- c8a00cb6fcee5b45c052536984a2d5c3067851
+|  |  +-- 04
+|  |  |  \-- 02c0c69713e7e75e74e632240a9eb79ff47d6c
+|  |  +-- 06
+|  |  |  \-- cf95299f8209a7dbfddb5f246fd11be184905b
+|  |  +-- 08
+|  |  |  \-- 421ab7f69a552dedbcd90dd4a98ecd932a9aeb
+|  |  +-- 0d
+|  |  |  \-- 37cc017a03e4ff830aa26692b5b982a04086f6
+|  |  +-- 10
+|  |  |  \-- 7acd32c4e687021ef32db511e8a206129b88ec
+|  |  +-- 13
+|  |  |  \-- cd0216b7c79dc33427e042d93dc03ad8f47623
+|  |  +-- 15
+|  |  |  \-- bc149ac941e0684cb010a5d5b7f66199b80066
+|  |  +-- 16
+|  |  |  \-- 660f1d80a1f5cde389ecce783051eb8f68223d
+|  |  +-- 19
+|  |  |  \-- eb669b0eb8d66b7189ebb2c5174b4b3abf24e6
+|  |  +-- 1a
+|  |  |  \-- bff9428cbabb9571d6c16d1b3705d863cd1863
+|  |  +-- 1b
+|  |  |  \-- 1e485432b104f8ed655ab9c1fc49f6fbc6c272
+|  |  +-- 1e
+|  |  |  +-- 567f5556e57702b8cfbb2e9f343404fd9d0814
+|  |  |  \-- ac35881360174057fc5104a7faf501a51c51bd
+|  |  +-- 1f
+|  |  |  \-- c3b7437fa236cd8c90338a2066873ec7ed20ed
+|  |  +-- 20
+|  |  |  +-- bce1566ab5bd7976204fa50e5cbc32732238e0
+|  |  |  \-- d4161e553ea81608903ec13b85eb9c57af1886
+|  |  +-- 21
+|  |  |  +-- 103399e8b597785d13031d35b7d6223880aa9f
+|  |  |  \-- 328758822c5e5a1b8efe5ca2819bb2c85c9ed6
+|  |  +-- 23
+|  |  |  +-- 10693b4c6f3d2354e6bf895474ed6a9d0846a2
+|  |  |  \-- a3b8eb26fabd04213728c6d407c109217b6bc4
+|  |  +-- 26
+|  |  |  +-- 452e840cbe43fb8d55b1b7c04ddce6e36d5821
+|  |  |  +-- aa2dd1375fd2936be348928f340ccb001b33cd
+|  |  |  \-- d33521af10bcc7fd8cea344038eaaeb78d0ef5
+|  |  +-- 2c
+|  |  |  \-- 3500a27e9649397bb65ce316c3793a9eafd64d
+|  |  +-- 2f
+|  |  |  \-- b398cd6839d626b8349c4ac6cce33be50201c3
+|  |  +-- 30
+|  |  |  +-- b8fc6af4fa85e95c18842165cc0cf6cffa4316
+|  |  |  \-- ef2931d098bc66d9d8eb7798bf01bb6653eeeb
+|  |  +-- 31
+|  |  |  \-- 8f984c61c167c1da21d51e606d89b3739e1d3c
+|  |  +-- 35
+|  |  |  \-- 47338ee3bb046fc8a4d6bf800cb03e1ce82656
+|  |  +-- 37
+|  |  |  \-- 1f2e299f27ed45ecbf54b02a2cda9467d794d4
+|  |  +-- 38
+|  |  |  \-- 64abe0358742997101d3bd85135e1b3e340c80
+|  |  +-- 39
+|  |  |  +-- 4097483e4af1e903eed68c312f1e3bc406dd8f
+|  |  |  \-- e7a873e72287aa1ec32b6a44459b550edb0946
+|  |  +-- 3d
+|  |  |  \-- 443982b48b939f26b27c357fd23892cba28c9a
+|  |  +-- 3f
+|  |  |  \-- 80a9552efb0a62cb996f427268d533cd414c5b
+|  |  +-- 42
+|  |  |  \-- afabfd2abebf31384ca7797186a27a4b7dbee8
+|  |  +-- 44
+|  |  |  \-- bd04d09ec7423ad9658fe502f16bf34350a05b
+|  |  +-- 45
+|  |  |  \-- 43b21e8fceb0ab34a6522a7d0e503bb6e3d2a8
+|  |  +-- 46
+|  |  |  \-- dfcd7a081462d79673ff09144f43eb12510470
+|  |  +-- 48
+|  |  |  \-- 1bb434814107eb79d7a30b676d344b0df2f8ce
+|  |  +-- 4a
+|  |  |  +-- 53bee8cb948a6e677a1a320d0ecfbe26d4062e
+|  |  |  +-- a09643e1f01196dee62b0b80c7da3eb968132a
+|  |  |  \-- e7d12378f3c5b43e746a42a941127ddd5b9dde
+|  |  +-- 4b
+|  |  |  +-- 32cff3245ad1e34fcbbd058f08d358c728908d
+|  |  |  \-- b3d0ba702c9c974b0bc81607f876993d37d443
+|  |  +-- 4c
+|  |  |  +-- c389fc31b2cf362da61fff2d9fad1ae9a62127
+|  |  |  \-- d396bb1a56b85fdf629eeff98e0fccee1e450c
+|  |  +-- 4e
+|  |  |  \-- b8f62d40d86e34dddaca4562fa7971e6ec74de
+|  |  +-- 4f
+|  |  |  +-- 01484660117bd093a0280b2c2b0e4d312a0911
+|  |  |  +-- 906e0c811fc9e230eb44819f509cd0627f2600
+|  |  |  \-- f92b1f76fb221964ff401110555969b6a6bc25
+|  |  +-- 50
+|  |  |  \-- 53bcafbb0d0acebd1abe6e8df6956ade55dad7
+|  |  +-- 52
+|  |  |  \-- 3aa650600f31be31d0b21b636871543b99a486
+|  |  +-- 53
+|  |  |  \-- 3f72f927a66db739aaf4ee27cf3753e36b9cea
+|  |  +-- 54
+|  |  |  \-- 8f42a9c478c259fc6905aa1cc1f7708af3f542
+|  |  +-- 55
+|  |  |  \-- 344e51920f3dcbb968d32ee2281e029d1571bf
+|  |  +-- 57
+|  |  |  +-- b246195de09717f77c60b2363bac4fe980a472
+|  |  |  \-- f7ae3d28b1bb24f9e422cc3e01b6d81c0713dc
+|  |  +-- 59
+|  |  |  \-- c82d822d2fb02dad906520be767e0fd1467b7a
+|  |  +-- 5a
+|  |  |  \-- ea15bc2dcc7cf0e8c9e0d32d624c3b8486f484
+|  |  +-- 5b
+|  |  |  \-- 49c573a4fa83dc16e4d0b1da5293fb033e1623
+|  |  +-- 63
+|  |  |  +-- 7dbd5811c1957352aa89a408ab2847ac515d17
+|  |  |  \-- 9c779c30dcea44b3fa466e6bdad0eee2f3cc8f
+|  |  +-- 64
+|  |  |  \-- b836a5090723c452194bda265b59318b38a0ea
+|  |  +-- 67
+|  |  |  +-- 5df4b4b8f33e44491c1f2a6302b43fda7cf9d6
+|  |  |  +-- 983e821e3c8b4cd4c0098fcaf23a8a6ea405f9
+|  |  |  \-- a736a47ba8f85557c5f23773f7378b8f6fe131
+|  |  +-- 68
+|  |  |  \-- 6d15e8756ed637e25ce10c63fef172b06ce21a
+|  |  +-- 69
+|  |  |  +-- 5e0802b133d380ab46e2486de56116243b98df
+|  |  |  \-- 6dae141f762b256dbd4c8f5bd238b5ba8a1b89
+|  |  +-- 6b
+|  |  |  \-- 92b6ba8474773ebf21d2d69cd0b1f5c6010d26
+|  |  +-- 6c
+|  |  |  +-- 23f56245dcdd3c86f86c4929d0632db1365e97
+|  |  |  \-- 938aff6d189fdf00ae8953461c62700d37b2c9
+|  |  +-- 6d
+|  |  |  \-- 384a733def776fe0d1776d7f13e909581f0160
+|  |  +-- 6e
+|  |  |  +-- 0a6ba335f367f90c1b4fe1a6bd70d68770efe2
+|  |  |  +-- 6f5e1536cf6d5104b280b922c6bf951c995e3d
+|  |  |  \-- a9f4820fa404d57c75544376f579ceecad8a69
+|  |  +-- 71
+|  |  |  \-- 7ce33d08e86f9fccdd35d0508bdc0ee7dba50b
+|  |  +-- 72
+|  |  |  +-- 04c64417bda3e59f226af8c6413053b8f4a712
+|  |  |  +-- 3020cd0a716a5c59e17aa018f378af2a1f9791
+|  |  |  \-- d437736464b5bf7a871b5e14afe9aafd7c2af9
+|  |  +-- 74
+|  |  |  \-- dd639e4ea4800753c1dbdb333093410e843492
+|  |  +-- 76
+|  |  |  +-- 589c0c142118cba5835072a6c3b82ad8606c97
+|  |  |  \-- cfd72d70d6a502ceee76bb2114739918c52e50
+|  |  +-- 78
+|  |  |  \-- 77a59b6bfafe77f9ff76646cd578a53546eb84
+|  |  +-- 79
+|  |  |  \-- cf4e3272d4c6a36894addaa8ff34e734666f5e
+|  |  +-- 7d
+|  |  |  +-- 322b7b47cdf7489d9ab0451ecfd4754221a74f
+|  |  |  \-- 5c7e768325c92df5b0be924d69cf328c57d698
+|  |  +-- 7f
+|  |  |  \-- 4cc92e4d06f779ad15b31bb8a1e2c3715b187e
+|  |  +-- 80
+|  |  |  \-- af45aeaf525a95d6103986824889b3debce844
+|  |  +-- 85
+|  |  |  \-- e52a22ae15ce5dda94bf95ae5145b69b82dcbe
+|  |  +-- 86
+|  |  |  \-- 88a372de7b5e679caa0e546a7e81a23f5854e7
+|  |  +-- 8a
+|  |  |  \-- b327cba9b872481dd9b6d67b99206e28f3913c
+|  |  +-- 8b
+|  |  |  \-- 833ea0e69ea891e2e847c9603c0253ff445812
+|  |  +-- 8e
+|  |  |  \-- 3812fd1378adb7478f116faad3acbc41ae09a1
+|  |  +-- 8f
+|  |  |  +-- 5145623dcc89d4592e285cd0fea63ae039eef6
+|  |  |  \-- ad813154bb011f91bf41c46eb843bc14a1782b
+|  |  +-- 91
+|  |  |  \-- 135039f4333cb8f9c5a360e1fdbf06b8cf4e60
+|  |  +-- 92
+|  |  |  \-- 2f1e833561f9fadc1e9fd9efe90f7c5132182d
+|  |  +-- 93
+|  |  |  \-- 27c7df41c4a52cc27a972aa33f225d11f213be
+|  |  +-- 94
+|  |  |  +-- 93cf73c71f8c4b84d949ec675deb035b98afb2
+|  |  |  +-- a25f7f4cb416c083d265558da75d457237d671
+|  |  |  \-- e5d5c4d92de7d943e3251a33fb8d5dce2c29ce
+|  |  +-- 96
+|  |  |  \-- cdcfc2b69bfc5ed8bf8bc90a24aca069ff39b1
+|  |  +-- 97
+|  |  |  \-- f0a8e140eb13e7d6fe6da418d1752a180fc74c
+|  |  +-- 98
+|  |  |  +-- 2bdbaa3f482b59cf25bc528c7eed10846cdd73
+|  |  |  \-- 66c4ccbb45912926ff7e8b31ff4f6d635a9e7d
+|  |  +-- 9b
+|  |  |  \-- b86834fbf77d49ca0d7c9e0544cb410942f201
+|  |  +-- 9c
+|  |  |  \-- 0113716a25a19b24b8b3c57c8aa9607d33a886
+|  |  +-- 9f
+|  |  |  \-- 223fa1bbe0ea72a6c680f9cc7490e9e197d87a
+|  |  +-- a2
+|  |  |  +-- 7a07917d7534b1e70cc9323679f334793a925e
+|  |  |  \-- b64628b1d0a021403bfd0c85a514e336a596f0
+|  |  +-- a4
+|  |  |  \-- 73cae4c1055134bd5d877176048e17c1af6635
+|  |  +-- a5
+|  |  |  +-- 5e7a179bde3e4e772c29c0c85e53354aa54618
+|  |  |  \-- e10e057acd02f64d1aac4a933c9d94fdd7e84e
+|  |  +-- a6
+|  |  |  +-- 44a68e8f1dc0df484b11914e0c41962b656b05
+|  |  |  \-- d46036d55326955ef32df95de0e8e38dd628f9
+|  |  +-- a7
+|  |  |  +-- 1d6ab47a37790df25b7cfa168013e18cf71de3
+|  |  |  \-- 3ffe12c6ecd417e7c76ce4db1349450276c19d
+|  |  +-- a8
+|  |  |  \-- 7562014877809efa7f1df98c33896ee382bd41
+|  |  +-- aa
+|  |  |  \-- 724b77071afcbd9bb398053e05adaf7ac9405a
+|  |  +-- ad
+|  |  |  \-- 7baa86872f502d57825549a30ccfed0249dd82
+|  |  +-- af
+|  |  |  \-- ce47dad39ed89245f5615fb62240926b03fae8
+|  |  +-- b2
+|  |  |  +-- 68ef36cd2de3a14ddddf25aa9f5d4e95731e18
+|  |  |  \-- c751a35c77d4f7b713fe3bfc2cfb693e4d984f
+|  |  +-- b5
+|  |  |  \-- 83eebfa8c9915b9f12a452811fc3c62a330e6e
+|  |  +-- b8
+|  |  |  +-- 19835412713ea21071adcaaae88e07d8f6d48c
+|  |  |  +-- 6273d9424b73937ca6ad7933f6b7eeb60f4a3d
+|  |  |  \-- f419f14edc8228ed30c43f43e8b027003b081e
+|  |  +-- b9
+|  |  |  \-- dc8921572313f720193e7a6f0dc0133478047f
+|  |  +-- ba
+|  |  |  +-- 17fa35fd460bfdf23d726bf00b0ae0ef0e4cfe
+|  |  |  \-- 29afc7abeb824553772753f946b7cc4788ff1f
+|  |  +-- bc
+|  |  |  +-- 6aea0212f42d427155d72be642452e0e1518d8
+|  |  |  \-- bd0d577839593c457b7c51324614ac9981986c
+|  |  +-- bd
+|  |  |  \-- 06a633144d15161330f43ae5215dad56dd4a19
+|  |  +-- bf
+|  |  |  \-- 9505825bb001b5777dd8821b0c1f6f4aa1e085
+|  |  +-- c2
+|  |  |  \-- cf390471332c6968ba477026a93a3e955321d5
+|  |  +-- c3
+|  |  |  +-- 0bdba3e846e3f23d558f912309f86133b297dc
+|  |  |  \-- 76020383c8abbe2b5156ba084b7e1fa62bf242
+|  |  +-- c5
+|  |  |  \-- df7d1af44aa25d1d7002e539093f391e87e303
+|  |  +-- c6
+|  |  |  \-- 9c1cf77b864f3aad547fcf281844eb0aaacbcd
+|  |  +-- c8
+|  |  |  +-- 7a9ab69b45c86cc646b8b8b296a9cdac9c3d81
+|  |  |  \-- e84431effa1ef8fa6c679d9647ad620a2bfc52
+|  |  +-- ca
+|  |  |  +-- 3826a46ce070f906d0d3fbe6987df882134381
+|  |  |  \-- 4a9ebbdbd271ebc807b93811a910fb31863824
+|  |  +-- cd
+|  |  |  \-- 385ab1076026b00b4b676e8c7f6603772f626e
+|  |  +-- ce
+|  |  |  +-- 0ed73cfe7687caff42d2d16f573f5fd91d312d
+|  |  |  +-- add061e9ca97d11ad86850a5f5a8b4f4c3e631
+|  |  |  \-- ec28f134604c74c72a4dc46348cf22739bfed5
+|  |  +-- cf
+|  |  |  \-- ca2995c5436cd0fad53b1973d579885bfd122e
+|  |  +-- d0
+|  |  |  \-- 9b89b96f0ef2bea1b06b834acba27f22af3f51
+|  |  +-- d2
+|  |  |  \-- aa397f5faebf15cd5e8bb9fb44f643a89c1ef8
+|  |  +-- d4
+|  |  |  \-- e925aaf7f68b8ced62ff677dcb7508e9f3f0f6
+|  |  +-- d6
+|  |  |  \-- 79c482aeeb19cb2086ceb7cac92ff4dae505a5
+|  |  +-- d9
+|  |  |  \-- 53a258cc489d0c2f79b6a733d3385315551b27
+|  |  +-- da
+|  |  |  \-- 1dcd94e9d5c2903b0cc31a8cd0a00d29ecf240
+|  |  +-- db
+|  |  |  \-- 4f32b049fc0824f02207916694f0f3d4e6e183
+|  |  +-- dc
+|  |  |  \-- 30b8b926ede6c6aaa153f8545ee06ffee5f388
+|  |  +-- df
+|  |  |  \-- 4d939b6f58e4f2117aa85d4633e6ae7ad2afee
+|  |  +-- e3
+|  |  |  \-- f59d3fff89c36018bf33f92d528cf0e04f634c
+|  |  +-- e6
+|  |  |  \-- 9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+|  |  +-- e7
+|  |  |  +-- 08b1c023ec8b20f512888fe07c5bd3ff77bb8f
+|  |  |  \-- 8bc0922b1354e731c8bddc20839e1c1d82393e
+|  |  +-- e8
+|  |  |  \-- d3a2883eed0c072da0c28d7c102e12fa92210a
+|  |  +-- e9
+|  |  |  \-- 4632ec5368d9a0cb8d0beac3852d0f8e233533
+|  |  +-- ea
+|  |  |  \-- 800baf543acaff12fd0c4c1c09b388400c416e
+|  |  +-- ee
+|  |  |  +-- 034c1d4aa23f32b2821f1138d231cfa281f8e9
+|  |  |  \-- adf7731de12d012e11ac02def020fff7cb0b95
+|  |  +-- f1
+|  |  |  \-- a52d72a7587d5244e29d736d7cecd7c2556eb0
+|  |  +-- f4
+|  |  |  +-- 4ebfc2b223cc18b4c3b244708da7cfc24425b1
+|  |  |  \-- ca15c902a24fa743bec3f5e68529bd73143701
+|  |  +-- f8
+|  |  |  \-- 051a6f973e69a86e6f07f1a1c87f17a31c7235
+|  |  +-- fb
+|  |  |  \-- c7f0599c3f5ef44b93f2268b306d8fdb4ed972
+|  |  +-- fc
+|  |  |  \-- f5862b2f5f81591e9fbb381e075d154faf68c0
+|  |  +-- fd
+|  |  |  +-- 1b67142a53691901efe80ca3c4a0ed9c294856
+|  |  |  +-- 92502ea73a1b0322fc5763501428bbcc6b9f62
+|  |  |  \-- b20e2f6c6a6851069b11c10162ec40fe35b287
+|  |  +-- fe
+|  |  |  \-- 51227f036874e22c4befe3cd1f625489f521c5
+|  |  +-- info
+|  |  \-- pack
+|  +-- refs
+|  |  +-- heads
+|  |  |  \-- master
+|  |  +-- remotes
+|  |  |  \-- origin
+|  |  |     \-- master
+|  |  \-- tags
+|  |     \-- 1
+|  +-- COMMIT_EDITMSG
+|  +-- config
+|  +-- description
+|  +-- FETCH_HEAD
+|  +-- HEAD
+|  +-- index
+|  +-- ORIG_HEAD
+|  \-- REBASE_HEAD
++-- .gradle
+|  +-- 8.11.1
+|  |  +-- checksums
+|  |  |  +-- checksums.lock
+|  |  |  +-- md5-checksums.bin
+|  |  |  \-- sha1-checksums.bin
+|  |  +-- executionHistory
+|  |  |  \-- executionHistory.lock
+|  |  +-- expanded
+|  |  +-- fileChanges
+|  |  |  \-- last-build.bin
+|  |  +-- fileHashes
+|  |  |  +-- fileHashes.bin
+|  |  |  +-- fileHashes.lock
+|  |  |  \-- resourceHashesCache.bin
+|  |  +-- vcsMetadata
+|  |  \-- gc.properties
+|  +-- 8.13
+|  |  +-- checksums
+|  |  |  +-- checksums.lock
+|  |  |  +-- md5-checksums.bin
+|  |  |  \-- sha1-checksums.bin
+|  |  +-- executionHistory
+|  |  |  +-- executionHistory.bin
+|  |  |  \-- executionHistory.lock
+|  |  +-- expanded
+|  |  +-- fileChanges
+|  |  |  \-- last-build.bin
+|  |  +-- fileHashes
+|  |  |  +-- fileHashes.bin
+|  |  |  +-- fileHashes.lock
+|  |  |  \-- resourceHashesCache.bin
+|  |  +-- vcsMetadata
+|  |  \-- gc.properties
+|  +-- buildOutputCleanup
+|  |  +-- buildOutputCleanup.lock
+|  |  +-- cache.properties
+|  |  \-- outputFiles.bin
+|  +-- kotlin
+|  |  \-- errors
+|  +-- vcs-1
+|  |  \-- gc.properties
+|  \-- config.properties
++-- .idea
+|  +-- caches
+|  |  \-- deviceStreaming.xml
+|  +-- codeStyles
+|  |  +-- codeStyleConfig.xml
+|  |  \-- Project.xml
+|  +-- .gitignore
+|  +-- AndroidProjectSystem.xml
+|  +-- appInsightsSettings.xml
+|  +-- assetWizardSettings.xml
+|  +-- compiler.xml
+|  +-- deploymentTargetSelector.xml
+|  +-- gradle.xml
+|  +-- migrations.xml
+|  +-- misc.xml
+|  +-- runConfigurations.xml
+|  +-- vcs.xml
+|  \-- workspace.xml
++-- .kotlin
+|  +-- errors
+|  |  +-- errors-1751067819246.log
+|  |  +-- errors-1751068363742.log
+|  |  +-- errors-1751068708845.log
+|  |  \-- errors-1751069173982.log
+|  \-- sessions
++-- app
+|  +-- build
+|  |  +-- generated [DIR EXCLUDED]
+|  |  |  \-- res [DIR EXCLUDED]
+|  |  |     +-- pngs [DIR EXCLUDED]
+|  |  |     |  +-- debug [DIR EXCLUDED]
+|  |  |     |  \-- release [DIR EXCLUDED]
+|  |  |     \-- resValues [DIR EXCLUDED]
+|  |  |        +-- debug [DIR EXCLUDED]
+|  |  |        \-- release [DIR EXCLUDED]
+|  |  +-- intermediates [DIR EXCLUDED]
+|  |  |  +-- aar_metadata_check [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- checkDebugAarMetadata [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- checkReleaseAarMetadata [DIR EXCLUDED]
+|  |  |  +-- annotation_processor_list [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- javaPreCompileDebug [DIR EXCLUDED]
+|  |  |  |  |     \-- annotationProcessors.json [EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- javaPreCompileRelease [DIR EXCLUDED]
+|  |  |  |        \-- annotationProcessors.json [EXCLUDED]
+|  |  |  +-- apk [DIR EXCLUDED]
+|  |  |  |  \-- debug [DIR EXCLUDED]
+|  |  |  |     +-- app-debug.apk [EXCLUDED]
+|  |  |  |     \-- output-metadata.json [EXCLUDED]
+|  |  |  +-- apk_ide_redirect_file [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- createDebugApkListingFileRedirect [DIR EXCLUDED]
+|  |  |  |  |     \-- redirect.txt [EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- createReleaseApkListingFileRedirect [DIR EXCLUDED]
+|  |  |  |        \-- redirect.txt [EXCLUDED]
+|  |  |  +-- app_metadata [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- writeDebugAppMetadata [DIR EXCLUDED]
+|  |  |  |  |     \-- app-metadata.properties [EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- writeReleaseAppMetadata [DIR EXCLUDED]
+|  |  |  |        \-- app-metadata.properties [EXCLUDED]
+|  |  |  +-- assets [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- mergeDebugAssets [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- mergeReleaseAssets [DIR EXCLUDED]
+|  |  |  +-- binary_art_profile [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- compileReleaseArtProfile [DIR EXCLUDED]
+|  |  |  |        \-- baseline.prof [EXCLUDED]
+|  |  |  +-- binary_art_profile_metadata [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- compileReleaseArtProfile [DIR EXCLUDED]
+|  |  |  |        \-- baseline.profm [EXCLUDED]
+|  |  |  +-- combined_art_profile [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- compileReleaseArtProfile [DIR EXCLUDED]
+|  |  |  |        \-- baseline-prof.txt [EXCLUDED]
+|  |  |  +-- compatible_screen_manifest [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- createDebugCompatibleScreenManifests [DIR EXCLUDED]
+|  |  |  |  |     \-- output-metadata.json [EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- createReleaseCompatibleScreenManifests [DIR EXCLUDED]
+|  |  |  |        \-- output-metadata.json [EXCLUDED]
+|  |  |  +-- compile_and_runtime_not_namespaced_r_class_jar [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- processDebugResources [DIR EXCLUDED]
+|  |  |  |  |     \-- R.jar [EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- processReleaseResources [DIR EXCLUDED]
+|  |  |  |        \-- R.jar [EXCLUDED]
+|  |  |  +-- compressed_assets [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- compressDebugAssets [DIR EXCLUDED]
+|  |  |  |  |     \-- out [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- compressReleaseAssets [DIR EXCLUDED]
+|  |  |  |        \-- out [DIR EXCLUDED]
+|  |  |  +-- d8_metadata [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- mergeDexRelease [DIR EXCLUDED]
+|  |  |  |        \-- d8-metadata.dat [EXCLUDED]
+|  |  |  +-- data_binding_layout_info_type_merge [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- mergeDebugResources [DIR EXCLUDED]
+|  |  |  |  |     \-- out [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- mergeReleaseResources [DIR EXCLUDED]
+|  |  |  |        \-- out [DIR EXCLUDED]
+|  |  |  +-- data_binding_layout_info_type_package [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- packageDebugResources [DIR EXCLUDED]
+|  |  |  |  |     \-- out [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- packageReleaseResources [DIR EXCLUDED]
+|  |  |  |        \-- out [DIR EXCLUDED]
+|  |  |  +-- default_proguard_files [DIR EXCLUDED]
+|  |  |  |  \-- global [DIR EXCLUDED]
+|  |  |  |     +-- proguard-android.txt-8.11.0 [EXCLUDED]
+|  |  |  |     +-- proguard-android-optimize.txt-8.11.0 [EXCLUDED]
+|  |  |  |     \-- proguard-defaults.txt-8.11.0 [EXCLUDED]
+|  |  |  +-- desugar_graph [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- dexBuilderDebug [DIR EXCLUDED]
+|  |  |  |  |     \-- out [DIR EXCLUDED]
+|  |  |  |  |        +-- currentProject [DIR EXCLUDED]
+|  |  |  |  |        |  +-- dirs_bucket_0 [DIR EXCLUDED]
+|  |  |  |  |        |  |  \-- graph.bin [EXCLUDED]
+|  |  |  |  |        |  +-- dirs_bucket_1 [DIR EXCLUDED]
+|  |  |  |  |        |  |  \-- graph.bin [EXCLUDED]
+|  |  |  |  |        |  +-- dirs_bucket_2 [DIR EXCLUDED]
+|  |  |  |  |        |  |  \-- graph.bin [EXCLUDED]
+|  |  |  |  |        |  +-- dirs_bucket_3 [DIR EXCLUDED]
+|  |  |  |  |        |  |  \-- graph.bin [EXCLUDED]
+|  |  |  |  |        |  +-- jar_79727b7bd9cffce77d671182f3efbe0aa33cd73380f7b619bcc840fd20e0a2a9_bucket_0 [DIR EXCLUDED]
+|  |  |  |  |        |  |  \-- graph.bin [EXCLUDED]
+|  |  |  |  |        |  +-- jar_79727b7bd9cffce77d671182f3efbe0aa33cd73380f7b619bcc840fd20e0a2a9_bucket_1 [DIR EXCLUDED]
+|  |  |  |  |        |  |  \-- graph.bin [EXCLUDED]
+|  |  |  |  |        |  +-- jar_79727b7bd9cffce77d671182f3efbe0aa33cd73380f7b619bcc840fd20e0a2a9_bucket_2 [DIR EXCLUDED]
+|  |  |  |  |        |  |  \-- graph.bin [EXCLUDED]
+|  |  |  |  |        |  \-- jar_79727b7bd9cffce77d671182f3efbe0aa33cd73380f7b619bcc840fd20e0a2a9_bucket_3 [DIR EXCLUDED]
+|  |  |  |  |        |     \-- graph.bin [EXCLUDED]
+|  |  |  |  |        +-- externalLibs [DIR EXCLUDED]
+|  |  |  |  |        +-- mixedScopes [DIR EXCLUDED]
+|  |  |  |  |        \-- otherProjects [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- dexBuilderRelease [DIR EXCLUDED]
+|  |  |  |        \-- out [DIR EXCLUDED]
+|  |  |  |           +-- currentProject [DIR EXCLUDED]
+|  |  |  |           |  +-- dirs_bucket_0 [DIR EXCLUDED]
+|  |  |  |           |  |  \-- graph.bin [EXCLUDED]
+|  |  |  |           |  +-- dirs_bucket_1 [DIR EXCLUDED]
+|  |  |  |           |  |  \-- graph.bin [EXCLUDED]
+|  |  |  |           |  +-- dirs_bucket_2 [DIR EXCLUDED]
+|  |  |  |           |  |  \-- graph.bin [EXCLUDED]
+|  |  |  |           |  +-- dirs_bucket_3 [DIR EXCLUDED]
+|  |  |  |           |  |  \-- graph.bin [EXCLUDED]
+|  |  |  |           |  +-- jar_145f34491465a994b112112ec018f4b4e0685ceb39a1aa46c0dae5fc751c4160_bucket_0 [DIR EXCLUDED]
+|  |  |  |           |  |  \-- graph.bin [EXCLUDED]
+|  |  |  |           |  +-- jar_145f34491465a994b112112ec018f4b4e0685ceb39a1aa46c0dae5fc751c4160_bucket_1 [DIR EXCLUDED]
+|  |  |  |           |  |  \-- graph.bin [EXCLUDED]
+|  |  |  |           |  +-- jar_145f34491465a994b112112ec018f4b4e0685ceb39a1aa46c0dae5fc751c4160_bucket_2 [DIR EXCLUDED]
+|  |  |  |           |  |  \-- graph.bin [EXCLUDED]
+|  |  |  |           |  \-- jar_145f34491465a994b112112ec018f4b4e0685ceb39a1aa46c0dae5fc751c4160_bucket_3 [DIR EXCLUDED]
+|  |  |  |           |     \-- graph.bin [EXCLUDED]
+|  |  |  |           +-- externalLibs [DIR EXCLUDED]
+|  |  |  |           +-- mixedScopes [DIR EXCLUDED]
+|  |  |  |           \-- otherProjects [DIR EXCLUDED]
+|  |  |  +-- dex [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  +-- mergeExtDexDebug [DIR EXCLUDED]
+|  |  |  |  |  |  +-- classes.dex [EXCLUDED]
+|  |  |  |  |  |  +-- classes2.dex [EXCLUDED]
+|  |  |  |  |  |  \-- classes3.dex [EXCLUDED]
+|  |  |  |  |  +-- mergeLibDexDebug [DIR EXCLUDED]
+|  |  |  |  |  |  +-- 0 [DIR EXCLUDED]
+|  |  |  |  |  |  +-- 1 [DIR EXCLUDED]
+|  |  |  |  |  |  +-- 10 [DIR EXCLUDED]
+|  |  |  |  |  |  +-- 11 [DIR EXCLUDED]
+|  |  |  |  |  |  +-- 12 [DIR EXCLUDED]
+|  |  |  |  |  |  +-- 13 [DIR EXCLUDED]
+|  |  |  |  |  |  +-- 14 [DIR EXCLUDED]
+|  |  |  |  |  |  +-- 15 [DIR EXCLUDED]
+|  |  |  |  |  |  +-- 2 [DIR EXCLUDED]
+|  |  |  |  |  |  +-- 3 [DIR EXCLUDED]
+|  |  |  |  |  |  +-- 4 [DIR EXCLUDED]
+|  |  |  |  |  |  +-- 5 [DIR EXCLUDED]
+|  |  |  |  |  |  +-- 6 [DIR EXCLUDED]
+|  |  |  |  |  |  +-- 7 [DIR EXCLUDED]
+|  |  |  |  |  |  +-- 8 [DIR EXCLUDED]
+|  |  |  |  |  |  \-- 9 [DIR EXCLUDED]
+|  |  |  |  |  \-- mergeProjectDexDebug [DIR EXCLUDED]
+|  |  |  |  |     +-- 0 [DIR EXCLUDED]
+|  |  |  |  |     |  \-- classes.dex [EXCLUDED]
+|  |  |  |  |     +-- 1 [DIR EXCLUDED]
+|  |  |  |  |     +-- 10 [DIR EXCLUDED]
+|  |  |  |  |     |  \-- classes.dex [EXCLUDED]
+|  |  |  |  |     +-- 11 [DIR EXCLUDED]
+|  |  |  |  |     +-- 12 [DIR EXCLUDED]
+|  |  |  |  |     +-- 13 [DIR EXCLUDED]
+|  |  |  |  |     +-- 14 [DIR EXCLUDED]
+|  |  |  |  |     +-- 15 [DIR EXCLUDED]
+|  |  |  |  |     +-- 2 [DIR EXCLUDED]
+|  |  |  |  |     +-- 3 [DIR EXCLUDED]
+|  |  |  |  |     +-- 4 [DIR EXCLUDED]
+|  |  |  |  |     +-- 5 [DIR EXCLUDED]
+|  |  |  |  |     +-- 6 [DIR EXCLUDED]
+|  |  |  |  |     +-- 7 [DIR EXCLUDED]
+|  |  |  |  |     +-- 8 [DIR EXCLUDED]
+|  |  |  |  |     |  \-- classes.dex [EXCLUDED]
+|  |  |  |  |     \-- 9 [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- mergeDexRelease [DIR EXCLUDED]
+|  |  |  |        +-- classes.dex [EXCLUDED]
+|  |  |  |        \-- classes2.dex [EXCLUDED]
+|  |  |  +-- dex_archive_input_jar_hashes [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- dexBuilderDebug [DIR EXCLUDED]
+|  |  |  |  |     \-- out [EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- dexBuilderRelease [DIR EXCLUDED]
+|  |  |  |        \-- out [EXCLUDED]
+|  |  |  +-- dex_metadata_directory [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- compileReleaseArtProfile [DIR EXCLUDED]
+|  |  |  |        +-- 0 [DIR EXCLUDED]
+|  |  |  |        |  \-- .dm [EXCLUDED]
+|  |  |  |        +-- 1 [DIR EXCLUDED]
+|  |  |  |        |  \-- .dm [EXCLUDED]
+|  |  |  |        \-- dex-metadata-map.properties [EXCLUDED]
+|  |  |  +-- dex_number_of_buckets_file [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- dexBuilderDebug [DIR EXCLUDED]
+|  |  |  |  |     \-- out [EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- dexBuilderRelease [DIR EXCLUDED]
+|  |  |  |        \-- out [EXCLUDED]
+|  |  |  +-- duplicate_classes_check [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- checkDebugDuplicateClasses [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- checkReleaseDuplicateClasses [DIR EXCLUDED]
+|  |  |  +-- external_file_lib_dex_archives [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- desugarDebugFileDependencies [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- desugarReleaseFileDependencies [DIR EXCLUDED]
+|  |  |  +-- external_libs_dex [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- mergeExtDexRelease [DIR EXCLUDED]
+|  |  |  |        +-- classes.dex [EXCLUDED]
+|  |  |  |        \-- classes2.dex [EXCLUDED]
+|  |  |  +-- external_libs_dex_archive [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- dexBuilderDebug [DIR EXCLUDED]
+|  |  |  |  |     \-- out [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- dexBuilderRelease [DIR EXCLUDED]
+|  |  |  |        \-- out [DIR EXCLUDED]
+|  |  |  +-- external_libs_dex_archive_with_artifact_transforms [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- dexBuilderDebug [DIR EXCLUDED]
+|  |  |  |  |     \-- out [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- dexBuilderRelease [DIR EXCLUDED]
+|  |  |  |        \-- out [DIR EXCLUDED]
+|  |  |  +-- global_synthetics_dex [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- mergeDebugGlobalSynthetics [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- mergeReleaseGlobalSynthetics [DIR EXCLUDED]
+|  |  |  +-- global_synthetics_external_lib [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- dexBuilderDebug [DIR EXCLUDED]
+|  |  |  |  |     \-- out [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- dexBuilderRelease [DIR EXCLUDED]
+|  |  |  |        \-- out [DIR EXCLUDED]
+|  |  |  +-- global_synthetics_external_libs_artifact_transform [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- dexBuilderDebug [DIR EXCLUDED]
+|  |  |  |  |     \-- out [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- dexBuilderRelease [DIR EXCLUDED]
+|  |  |  |        \-- out [DIR EXCLUDED]
+|  |  |  +-- global_synthetics_file_lib [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- desugarDebugFileDependencies [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- desugarReleaseFileDependencies [DIR EXCLUDED]
+|  |  |  +-- global_synthetics_mixed_scope [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- dexBuilderDebug [DIR EXCLUDED]
+|  |  |  |  |     \-- out [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- dexBuilderRelease [DIR EXCLUDED]
+|  |  |  |        \-- out [DIR EXCLUDED]
+|  |  |  +-- global_synthetics_project [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- dexBuilderDebug [DIR EXCLUDED]
+|  |  |  |  |     \-- out [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- dexBuilderRelease [DIR EXCLUDED]
+|  |  |  |        \-- out [DIR EXCLUDED]
+|  |  |  +-- global_synthetics_subproject [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- dexBuilderDebug [DIR EXCLUDED]
+|  |  |  |  |     \-- out [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- dexBuilderRelease [DIR EXCLUDED]
+|  |  |  |        \-- out [DIR EXCLUDED]
+|  |  |  +-- incremental [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  +-- mergeDebugResources [DIR EXCLUDED]
+|  |  |  |  |  |  +-- merged.dir [DIR EXCLUDED]
+|  |  |  |  |  |  +-- stripped.dir [DIR EXCLUDED]
+|  |  |  |  |  |  +-- compile-file-map.properties [EXCLUDED]
+|  |  |  |  |  |  \-- merger.xml [EXCLUDED]
+|  |  |  |  |  \-- packageDebugResources [DIR EXCLUDED]
+|  |  |  |  |     +-- merged.dir [DIR EXCLUDED]
+|  |  |  |  |     +-- stripped.dir [DIR EXCLUDED]
+|  |  |  |  |     +-- compile-file-map.properties [EXCLUDED]
+|  |  |  |  |     \-- merger.xml [EXCLUDED]
+|  |  |  |  +-- debug-mergeJavaRes [DIR EXCLUDED]
+|  |  |  |  |  +-- zip-cache [DIR EXCLUDED]
+|  |  |  |  |  |  +-- _0+PVfDn+xIK96RRkWeahQ0ZT00= [EXCLUDED]
+|  |  |  |  |  |  +-- _ppTX+aMmH7vVQzcPYTiwjzpN78= [EXCLUDED]
+|  |  |  |  |  |  +-- +EZmwqhpLmFbP_Wk_qfhSklE_CM= [EXCLUDED]
+|  |  |  |  |  |  +-- +TFIhy4qg0JMJGbf1E_fOg+cpvI= [EXCLUDED]
+|  |  |  |  |  |  +-- +UUY2_KmA9lZ2li2PA5nGhRPJyE= [EXCLUDED]
+|  |  |  |  |  |  +-- 1LF4TTr2jbNfm7oH3Yg03LWnNwo= [EXCLUDED]
+|  |  |  |  |  |  +-- 1mGGkJU2o1_Eh5AkZYxsyIN3zHg= [EXCLUDED]
+|  |  |  |  |  |  +-- 3YXKJCJgqDq5uBd5s3PKfxDmNLM= [EXCLUDED]
+|  |  |  |  |  |  +-- 4RkZijtQuJGKy8P63ABaLQ0OMDk= [EXCLUDED]
+|  |  |  |  |  |  +-- 5KkwAXmq43J6DWlZddn1YC7irj8= [EXCLUDED]
+|  |  |  |  |  |  +-- 7hSkhghGODGiyZOQqO+PkZvlz+E= [EXCLUDED]
+|  |  |  |  |  |  +-- 7r3QwgxmLNx7xn1AJXuiMGqf5nc= [EXCLUDED]
+|  |  |  |  |  |  +-- 7SpD2Nd+2Ty2h0OMsa1MgCNwsBA= [EXCLUDED]
+|  |  |  |  |  |  +-- 85HEHJqenth65lpkHE3cY1QxbaQ= [EXCLUDED]
+|  |  |  |  |  |  +-- 9taHZuvDauXN3NQVvEvmBGyQyTE= [EXCLUDED]
+|  |  |  |  |  |  +-- aHsTejanY4_EJ0fEhHL3dhd5WN8= [EXCLUDED]
+|  |  |  |  |  |  +-- aih1DLit_kwJ+DuRNmHygCjLGKI= [EXCLUDED]
+|  |  |  |  |  |  +-- aJK4WyS4OR0QM9twlcWyOziDy+w= [EXCLUDED]
+|  |  |  |  |  |  +-- awSUX6pudLlC3mm65tT_390aGpk= [EXCLUDED]
+|  |  |  |  |  |  +-- bTgeW+mKxzR7g_bIVeOYORLLf6k= [EXCLUDED]
+|  |  |  |  |  |  +-- DExhj_hHqTXvI0gDCOZeovcCrnE= [EXCLUDED]
+|  |  |  |  |  |  +-- DHWjrmmq+kYWumxxWEjyAbDy980= [EXCLUDED]
+|  |  |  |  |  |  +-- Di3D0QItYg_4VReTJqLGzDlMXJc= [EXCLUDED]
+|  |  |  |  |  |  +-- dVKPZU0kYzbkEz7klCBCdB60Qvc= [EXCLUDED]
+|  |  |  |  |  |  +-- EMxyGDHMVn6O4XA519xXTVPYu+w= [EXCLUDED]
+|  |  |  |  |  |  +-- FKV_Na1JmlodkDlaytNz8DDthBY= [EXCLUDED]
+|  |  |  |  |  |  +-- FTrYdGiveqSGLJEh2kOiEytVUgw= [EXCLUDED]
+|  |  |  |  |  |  +-- FZdeok9eR94u82p2UrfHXRCRrAI= [EXCLUDED]
+|  |  |  |  |  |  +-- G4Jourl0M14WIKjEsNWloN23Sag= [EXCLUDED]
+|  |  |  |  |  |  +-- GdFURCwlZo_R5Tx74_QAzC8ID9I= [EXCLUDED]
+|  |  |  |  |  |  +-- Ggq6UdnsAUqhyvc1KbnCYcrgyYI= [EXCLUDED]
+|  |  |  |  |  |  +-- gMsPAMWukQ6fxxiVomaNjsGNwSs= [EXCLUDED]
+|  |  |  |  |  |  +-- Gn6K3oKgF6qG1L3Q+xttP6XX5oQ= [EXCLUDED]
+|  |  |  |  |  |  +-- GTbDIls0EZPXXNxa7+2cLLwI8To= [EXCLUDED]
+|  |  |  |  |  |  +-- Gx+93E4q570uqrXpBtQM4ij14aE= [EXCLUDED]
+|  |  |  |  |  |  +-- HiWb_99IaS9vzlZwgALWLtD035Q= [EXCLUDED]
+|  |  |  |  |  |  +-- ik5eiDwldJzopjMoZf48Y4QXKsc= [EXCLUDED]
+|  |  |  |  |  |  +-- iO8XYRgdIthNX69fM5_gxPO93UI= [EXCLUDED]
+|  |  |  |  |  |  +-- ITYl6UeNzKDq+oa75X3B1H7nvsU= [EXCLUDED]
+|  |  |  |  |  |  +-- JCdQsG3vxgF+pKqv4p7_cDhwgZA= [EXCLUDED]
+|  |  |  |  |  |  +-- jz1+hnKCs_PtmJDi1gt3mHdliqc= [EXCLUDED]
+|  |  |  |  |  |  +-- KhW3UHN4XoO2ChTqiUg6HAVWc1E= [EXCLUDED]
+|  |  |  |  |  |  +-- KVskTUEvx35GqFVW21G6LdoGryY= [EXCLUDED]
+|  |  |  |  |  |  +-- l1p_uBm7BFyxQionegylUE7ykdM= [EXCLUDED]
+|  |  |  |  |  |  +-- lSb_TBY+5ZIqLLQYZJfwD11YYYk= [EXCLUDED]
+|  |  |  |  |  |  +-- mBnn6NSPqoiKEepFmzYde7zbY_s= [EXCLUDED]
+|  |  |  |  |  |  +-- mD+HfRnBS48BpoMk9btjvQUN14U= [EXCLUDED]
+|  |  |  |  |  |  +-- mdbj76syXVi_9r8imy8nU2jenmE= [EXCLUDED]
+|  |  |  |  |  |  +-- mlJLMRLCVouqOmvKxniOiStWWDY= [EXCLUDED]
+|  |  |  |  |  |  +-- mVgvPnnpjD94EhW1t6V4DsLmleM= [EXCLUDED]
+|  |  |  |  |  |  +-- Mwj0nORcUCYTAXqO_i0fAXIupb0= [EXCLUDED]
+|  |  |  |  |  |  +-- NFLZ6NqvOQhNHNOxLQU8Jp3cogc= [EXCLUDED]
+|  |  |  |  |  |  +-- nHgLrA0vP8rmbTJWlcTZtvcMuxU= [EXCLUDED]
+|  |  |  |  |  |  +-- NHpW4H6_70mqVqItOhFDoPgfi9I= [EXCLUDED]
+|  |  |  |  |  |  +-- NXGKecMDKL3oJEsrgWsBGLOdqWM= [EXCLUDED]
+|  |  |  |  |  |  +-- Nzdp9bqgiB6nFi5w4U6hpkT8hHc= [EXCLUDED]
+|  |  |  |  |  |  +-- OnOYONe48vGXNfhBuHuNJMbvFnc= [EXCLUDED]
+|  |  |  |  |  |  +-- OScCPGBBSQlPHtSJl79BwZbG1TI= [EXCLUDED]
+|  |  |  |  |  |  +-- oSdHbNeQ_SdkEjJQH+lecwGQEOM= [EXCLUDED]
+|  |  |  |  |  |  +-- P8nGcqE15ZSehxAeX6HE8iwocuw= [EXCLUDED]
+|  |  |  |  |  |  +-- pFz3xjPIHzvw6137Hz44wldd_gQ= [EXCLUDED]
+|  |  |  |  |  |  +-- pp4ycl6vZON5_n2HXHPCPsMrku8= [EXCLUDED]
+|  |  |  |  |  |  +-- Q0bf205Ty81VKImshBp95PHPCII= [EXCLUDED]
+|  |  |  |  |  |  +-- qwBb91nZ4C39UAlS5Y9+dcybGCM= [EXCLUDED]
+|  |  |  |  |  |  +-- R6ms1XuoJ21VjNd+LFlOvrz8CJQ= [EXCLUDED]
+|  |  |  |  |  |  +-- Rg+LIrEm4j2ulfgUv7VRvgOazUI= [EXCLUDED]
+|  |  |  |  |  |  +-- Sff_WuiKYPWCz3IvT59Fs6Fzlzg= [EXCLUDED]
+|  |  |  |  |  |  +-- SHpgAEnHTJpHDOi25nWUKeToYig= [EXCLUDED]
+|  |  |  |  |  |  +-- siLkhihR9EQvN94ywzErK_sK3mE= [EXCLUDED]
+|  |  |  |  |  |  +-- szqmKDRelNFX5Can_oTJpcgRlsw= [EXCLUDED]
+|  |  |  |  |  |  +-- t20ZRxHQrNWYfXwppdPWS68AaZE= [EXCLUDED]
+|  |  |  |  |  |  +-- T7rqsrA1dilg0ni924DyiJG2Xv0= [EXCLUDED]
+|  |  |  |  |  |  +-- TPOnSF6Bqc6BOsrvjcvbTOAfSi8= [EXCLUDED]
+|  |  |  |  |  |  +-- tR8G52mHDsFi9Euf1zyOUpW1oks= [EXCLUDED]
+|  |  |  |  |  |  +-- u4ox4DO2pV7OVzutPUJRCJd4RQ4= [EXCLUDED]
+|  |  |  |  |  |  +-- U7cNc7EMSgoU0gh5OLPvpnIcrf8= [EXCLUDED]
+|  |  |  |  |  |  +-- vQAjW+v4VAty0rdqB6bNhAl8BFA= [EXCLUDED]
+|  |  |  |  |  |  +-- VTpK8Y30s17A9XMDlletjpk0dVI= [EXCLUDED]
+|  |  |  |  |  |  +-- vw6U504Cd3rDhKA1oQ68qAxUhkU= [EXCLUDED]
+|  |  |  |  |  |  +-- w_LJIVLgHao0aA_5x8hFBJGD3yc= [EXCLUDED]
+|  |  |  |  |  |  +-- wCI1jl4pO5_rrbf_wXxVv8RDBrs= [EXCLUDED]
+|  |  |  |  |  |  +-- Xf7EjT2uGbtXxPv0dTd3bgTu5_w= [EXCLUDED]
+|  |  |  |  |  |  +-- y6_JqBt2cvBildFupKgLQwNj36g= [EXCLUDED]
+|  |  |  |  |  |  +-- YS4yAjDm4HPkzUUqwPl_DOSFFII= [EXCLUDED]
+|  |  |  |  |  |  +-- yu2w2JtIlbMc4kiY8mIRigKhZX0= [EXCLUDED]
+|  |  |  |  |  |  +-- Z_LWO0jlGJXUYzxFARE+IYzJoNg= [EXCLUDED]
+|  |  |  |  |  |  +-- z3awoiwbv_twHyxm0AGxA_JByus= [EXCLUDED]
+|  |  |  |  |  |  +-- zEk4re6EEBPMD6Fn9AG5HfE6DfY= [EXCLUDED]
+|  |  |  |  |  |  +-- ZOdk7OdEv8Vxz4tdOnS6JvAuJc8= [EXCLUDED]
+|  |  |  |  |  |  +-- zWhZV+dYd4Txu85RtMaREKA4q2g= [EXCLUDED]
+|  |  |  |  |  |  \-- ZxmPorTbjqZy_bXxOnI3HqSSmME= [EXCLUDED]
+|  |  |  |  |  \-- merge-state [EXCLUDED]
+|  |  |  |  +-- lintVitalAnalyzeRelease [DIR EXCLUDED]
+|  |  |  |  |  +-- module.xml [EXCLUDED]
+|  |  |  |  |  +-- release.xml [EXCLUDED]
+|  |  |  |  |  +-- release-artifact-dependencies.xml [EXCLUDED]
+|  |  |  |  |  \-- release-artifact-libraries.xml [EXCLUDED]
+|  |  |  |  +-- mergeDebugAssets [DIR EXCLUDED]
+|  |  |  |  |  \-- merger.xml [EXCLUDED]
+|  |  |  |  +-- mergeDebugJniLibFolders [DIR EXCLUDED]
+|  |  |  |  |  \-- merger.xml [EXCLUDED]
+|  |  |  |  +-- mergeDebugShaders [DIR EXCLUDED]
+|  |  |  |  |  \-- merger.xml [EXCLUDED]
+|  |  |  |  +-- mergeReleaseAssets [DIR EXCLUDED]
+|  |  |  |  |  \-- merger.xml [EXCLUDED]
+|  |  |  |  +-- mergeReleaseJniLibFolders [DIR EXCLUDED]
+|  |  |  |  |  \-- merger.xml [EXCLUDED]
+|  |  |  |  +-- mergeReleaseShaders [DIR EXCLUDED]
+|  |  |  |  |  \-- merger.xml [EXCLUDED]
+|  |  |  |  +-- packageDebug [DIR EXCLUDED]
+|  |  |  |  |  \-- tmp [DIR EXCLUDED]
+|  |  |  |  |     \-- debug [DIR EXCLUDED]
+|  |  |  |  |        +-- zip-cache [DIR EXCLUDED]
+|  |  |  |  |        |  +-- androidResources [EXCLUDED]
+|  |  |  |  |        |  \-- javaResources0 [EXCLUDED]
+|  |  |  |  |        \-- dex-renamer-state.txt [EXCLUDED]
+|  |  |  |  +-- packageRelease [DIR EXCLUDED]
+|  |  |  |  |  \-- tmp [DIR EXCLUDED]
+|  |  |  |  |     \-- release [DIR EXCLUDED]
+|  |  |  |  |        +-- zip-cache [DIR EXCLUDED]
+|  |  |  |  |        |  +-- androidResources [EXCLUDED]
+|  |  |  |  |        |  \-- javaResources0 [EXCLUDED]
+|  |  |  |  |        \-- dex-renamer-state.txt [EXCLUDED]
+|  |  |  |  +-- processDebugResources [DIR EXCLUDED]
+|  |  |  |  |  \-- resources-list-for-linked-resources-binary-format-debug.ap_.txt [EXCLUDED]
+|  |  |  |  +-- release [DIR EXCLUDED]
+|  |  |  |  |  +-- mergeReleaseResources [DIR EXCLUDED]
+|  |  |  |  |  |  +-- merged.dir [DIR EXCLUDED]
+|  |  |  |  |  |  |  +-- values [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-af [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-af.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-am [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-am.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-ar [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-ar.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-as [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-as.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-az [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-az.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-b+es+419 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-b+es+419.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-b+sr+Latn [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-b+sr+Latn.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-be [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-be.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-bg [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-bg.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-bn [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-bn.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-bs [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-bs.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-ca [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-ca.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-cs [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-cs.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-da [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-da.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-de [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-de.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-el [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-el.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-en-rAU [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-en-rAU.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-en-rCA [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-en-rCA.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-en-rGB [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-en-rGB.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-en-rIN [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-en-rIN.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-en-rXC [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-en-rXC.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-es [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-es.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-es-rUS [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-es-rUS.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-et [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-et.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-eu [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-eu.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-fa [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-fa.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-fi [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-fi.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-fr [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-fr.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-fr-rCA [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-fr-rCA.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-gl [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-gl.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-gu [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-gu.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-h320dp-port-v13 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-h320dp-port-v13.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-h360dp-land-v13 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-h360dp-land-v13.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-h480dp-land-v13 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-h480dp-land-v13.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-h480dp-v13 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-h480dp-v13.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-h550dp-port-v13 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-h550dp-port-v13.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-h720dp-v13 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-h720dp-v13.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-hdpi-v4 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-hdpi-v4.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-hi [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-hi.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-hr [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-hr.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-hu [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-hu.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-hy [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-hy.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-in [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-in.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-is [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-is.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-it [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-it.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-iw [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-iw.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-ja [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-ja.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-ka [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-ka.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-kk [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-kk.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-km [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-km.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-kn [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-kn.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-ko [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-ko.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-ky [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-ky.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-land [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-land.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-large-v4 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-large-v4.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-ldltr-v21 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-ldltr-v21.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-ldrtl-v17 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-ldrtl-v17.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-lo [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-lo.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-lt [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-lt.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-lv [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-lv.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-mk [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-mk.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-ml [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-ml.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-mn [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-mn.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-mr [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-mr.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-ms [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-ms.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-my [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-my.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-nb [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-nb.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-ne [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-ne.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-night-v8 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-night-v8.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-nl [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-nl.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-or [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-or.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-pa [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-pa.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-pl [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-pl.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-port [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-port.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-pt [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-pt.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-pt-rBR [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-pt-rBR.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-pt-rPT [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-pt-rPT.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-ro [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-ro.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-ru [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-ru.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-si [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-si.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-sk [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-sk.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-sl [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-sl.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-sq [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-sq.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-sr [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-sr.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-sv [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-sv.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-sw [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-sw.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-sw600dp-v13 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-sw600dp-v13.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-ta [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-ta.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-te [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-te.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-th [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-th.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-tl [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-tl.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-tr [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-tr.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-uk [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-uk.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-ur [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-ur.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-uz [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-uz.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-v16 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-v16.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-v17 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-v17.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-v18 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-v18.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-v21 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-v21.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-v22 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-v22.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-v23 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-v23.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-v24 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-v24.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-v25 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-v25.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-v26 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-v26.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-v28 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-v28.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-v30 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-v30.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-v31 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-v31.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-v34 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-v34.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-v35 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-v35.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-vi [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-vi.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-w320dp-land-v13 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-w320dp-land-v13.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-w360dp-port-v13 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-w360dp-port-v13.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-w400dp-port-v13 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-w400dp-port-v13.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-w600dp-land-v13 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-w600dp-land-v13.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-watch-v20 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-watch-v20.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-watch-v21 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-watch-v21.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-xlarge-v4 [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-xlarge-v4.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-zh-rCN [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-zh-rCN.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-zh-rHK [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-zh-rHK.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- values-zh-rTW [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- values-zh-rTW.xml [EXCLUDED]
+|  |  |  |  |  |  |  \-- values-zu [DIR EXCLUDED]
+|  |  |  |  |  |  |     \-- values-zu.xml [EXCLUDED]
+|  |  |  |  |  |  +-- stripped.dir [DIR EXCLUDED]
+|  |  |  |  |  |  +-- compile-file-map.properties [EXCLUDED]
+|  |  |  |  |  |  \-- merger.xml [EXCLUDED]
+|  |  |  |  |  \-- packageReleaseResources [DIR EXCLUDED]
+|  |  |  |  |     +-- merged.dir [DIR EXCLUDED]
+|  |  |  |  |     |  \-- values [DIR EXCLUDED]
+|  |  |  |  |     |     \-- values.xml [EXCLUDED]
+|  |  |  |  |     +-- stripped.dir [DIR EXCLUDED]
+|  |  |  |  |     +-- compile-file-map.properties [EXCLUDED]
+|  |  |  |  |     \-- merger.xml [EXCLUDED]
+|  |  |  |  \-- release-mergeJavaRes [DIR EXCLUDED]
+|  |  |  |     +-- zip-cache [DIR EXCLUDED]
+|  |  |  |     |  +-- _0+PVfDn+xIK96RRkWeahQ0ZT00= [EXCLUDED]
+|  |  |  |     |  +-- _ppTX+aMmH7vVQzcPYTiwjzpN78= [EXCLUDED]
+|  |  |  |     |  +-- +EZmwqhpLmFbP_Wk_qfhSklE_CM= [EXCLUDED]
+|  |  |  |     |  +-- +TFIhy4qg0JMJGbf1E_fOg+cpvI= [EXCLUDED]
+|  |  |  |     |  +-- 1LF4TTr2jbNfm7oH3Yg03LWnNwo= [EXCLUDED]
+|  |  |  |     |  +-- 1mGGkJU2o1_Eh5AkZYxsyIN3zHg= [EXCLUDED]
+|  |  |  |     |  +-- 3YXKJCJgqDq5uBd5s3PKfxDmNLM= [EXCLUDED]
+|  |  |  |     |  +-- 4RkZijtQuJGKy8P63ABaLQ0OMDk= [EXCLUDED]
+|  |  |  |     |  +-- 5KkwAXmq43J6DWlZddn1YC7irj8= [EXCLUDED]
+|  |  |  |     |  +-- 7hSkhghGODGiyZOQqO+PkZvlz+E= [EXCLUDED]
+|  |  |  |     |  +-- 7r3QwgxmLNx7xn1AJXuiMGqf5nc= [EXCLUDED]
+|  |  |  |     |  +-- 7SpD2Nd+2Ty2h0OMsa1MgCNwsBA= [EXCLUDED]
+|  |  |  |     |  +-- 85HEHJqenth65lpkHE3cY1QxbaQ= [EXCLUDED]
+|  |  |  |     |  +-- 9taHZuvDauXN3NQVvEvmBGyQyTE= [EXCLUDED]
+|  |  |  |     |  +-- aHsTejanY4_EJ0fEhHL3dhd5WN8= [EXCLUDED]
+|  |  |  |     |  +-- aih1DLit_kwJ+DuRNmHygCjLGKI= [EXCLUDED]
+|  |  |  |     |  +-- aJK4WyS4OR0QM9twlcWyOziDy+w= [EXCLUDED]
+|  |  |  |     |  +-- awSUX6pudLlC3mm65tT_390aGpk= [EXCLUDED]
+|  |  |  |     |  +-- bTgeW+mKxzR7g_bIVeOYORLLf6k= [EXCLUDED]
+|  |  |  |     |  +-- DExhj_hHqTXvI0gDCOZeovcCrnE= [EXCLUDED]
+|  |  |  |     |  +-- DHWjrmmq+kYWumxxWEjyAbDy980= [EXCLUDED]
+|  |  |  |     |  +-- dVKPZU0kYzbkEz7klCBCdB60Qvc= [EXCLUDED]
+|  |  |  |     |  +-- EMxyGDHMVn6O4XA519xXTVPYu+w= [EXCLUDED]
+|  |  |  |     |  +-- FKV_Na1JmlodkDlaytNz8DDthBY= [EXCLUDED]
+|  |  |  |     |  +-- FTrYdGiveqSGLJEh2kOiEytVUgw= [EXCLUDED]
+|  |  |  |     |  +-- G4Jourl0M14WIKjEsNWloN23Sag= [EXCLUDED]
+|  |  |  |     |  +-- GdFURCwlZo_R5Tx74_QAzC8ID9I= [EXCLUDED]
+|  |  |  |     |  +-- Ggq6UdnsAUqhyvc1KbnCYcrgyYI= [EXCLUDED]
+|  |  |  |     |  +-- gMsPAMWukQ6fxxiVomaNjsGNwSs= [EXCLUDED]
+|  |  |  |     |  +-- Gn6K3oKgF6qG1L3Q+xttP6XX5oQ= [EXCLUDED]
+|  |  |  |     |  +-- GTbDIls0EZPXXNxa7+2cLLwI8To= [EXCLUDED]
+|  |  |  |     |  +-- Gx+93E4q570uqrXpBtQM4ij14aE= [EXCLUDED]
+|  |  |  |     |  +-- HiWb_99IaS9vzlZwgALWLtD035Q= [EXCLUDED]
+|  |  |  |     |  +-- ik5eiDwldJzopjMoZf48Y4QXKsc= [EXCLUDED]
+|  |  |  |     |  +-- iO8XYRgdIthNX69fM5_gxPO93UI= [EXCLUDED]
+|  |  |  |     |  +-- ITYl6UeNzKDq+oa75X3B1H7nvsU= [EXCLUDED]
+|  |  |  |     |  +-- JCdQsG3vxgF+pKqv4p7_cDhwgZA= [EXCLUDED]
+|  |  |  |     |  +-- jz1+hnKCs_PtmJDi1gt3mHdliqc= [EXCLUDED]
+|  |  |  |     |  +-- KhW3UHN4XoO2ChTqiUg6HAVWc1E= [EXCLUDED]
+|  |  |  |     |  +-- KVskTUEvx35GqFVW21G6LdoGryY= [EXCLUDED]
+|  |  |  |     |  +-- l1p_uBm7BFyxQionegylUE7ykdM= [EXCLUDED]
+|  |  |  |     |  +-- lSb_TBY+5ZIqLLQYZJfwD11YYYk= [EXCLUDED]
+|  |  |  |     |  +-- mBnn6NSPqoiKEepFmzYde7zbY_s= [EXCLUDED]
+|  |  |  |     |  +-- mD+HfRnBS48BpoMk9btjvQUN14U= [EXCLUDED]
+|  |  |  |     |  +-- mdbj76syXVi_9r8imy8nU2jenmE= [EXCLUDED]
+|  |  |  |     |  +-- mlJLMRLCVouqOmvKxniOiStWWDY= [EXCLUDED]
+|  |  |  |     |  +-- mVgvPnnpjD94EhW1t6V4DsLmleM= [EXCLUDED]
+|  |  |  |     |  +-- Mwj0nORcUCYTAXqO_i0fAXIupb0= [EXCLUDED]
+|  |  |  |     |  +-- NFLZ6NqvOQhNHNOxLQU8Jp3cogc= [EXCLUDED]
+|  |  |  |     |  +-- nHgLrA0vP8rmbTJWlcTZtvcMuxU= [EXCLUDED]
+|  |  |  |     |  +-- NHpW4H6_70mqVqItOhFDoPgfi9I= [EXCLUDED]
+|  |  |  |     |  +-- NXGKecMDKL3oJEsrgWsBGLOdqWM= [EXCLUDED]
+|  |  |  |     |  +-- Nzdp9bqgiB6nFi5w4U6hpkT8hHc= [EXCLUDED]
+|  |  |  |     |  +-- OnOYONe48vGXNfhBuHuNJMbvFnc= [EXCLUDED]
+|  |  |  |     |  +-- OScCPGBBSQlPHtSJl79BwZbG1TI= [EXCLUDED]
+|  |  |  |     |  +-- oSdHbNeQ_SdkEjJQH+lecwGQEOM= [EXCLUDED]
+|  |  |  |     |  +-- P8nGcqE15ZSehxAeX6HE8iwocuw= [EXCLUDED]
+|  |  |  |     |  +-- pFz3xjPIHzvw6137Hz44wldd_gQ= [EXCLUDED]
+|  |  |  |     |  +-- pp4ycl6vZON5_n2HXHPCPsMrku8= [EXCLUDED]
+|  |  |  |     |  +-- Q0bf205Ty81VKImshBp95PHPCII= [EXCLUDED]
+|  |  |  |     |  +-- qwBb91nZ4C39UAlS5Y9+dcybGCM= [EXCLUDED]
+|  |  |  |     |  +-- R6ms1XuoJ21VjNd+LFlOvrz8CJQ= [EXCLUDED]
+|  |  |  |     |  +-- Rg+LIrEm4j2ulfgUv7VRvgOazUI= [EXCLUDED]
+|  |  |  |     |  +-- Sff_WuiKYPWCz3IvT59Fs6Fzlzg= [EXCLUDED]
+|  |  |  |     |  +-- SHpgAEnHTJpHDOi25nWUKeToYig= [EXCLUDED]
+|  |  |  |     |  +-- siLkhihR9EQvN94ywzErK_sK3mE= [EXCLUDED]
+|  |  |  |     |  +-- szqmKDRelNFX5Can_oTJpcgRlsw= [EXCLUDED]
+|  |  |  |     |  +-- t20ZRxHQrNWYfXwppdPWS68AaZE= [EXCLUDED]
+|  |  |  |     |  +-- T7rqsrA1dilg0ni924DyiJG2Xv0= [EXCLUDED]
+|  |  |  |     |  +-- TPOnSF6Bqc6BOsrvjcvbTOAfSi8= [EXCLUDED]
+|  |  |  |     |  +-- tR8G52mHDsFi9Euf1zyOUpW1oks= [EXCLUDED]
+|  |  |  |     |  +-- U7cNc7EMSgoU0gh5OLPvpnIcrf8= [EXCLUDED]
+|  |  |  |     |  +-- vQAjW+v4VAty0rdqB6bNhAl8BFA= [EXCLUDED]
+|  |  |  |     |  +-- VTpK8Y30s17A9XMDlletjpk0dVI= [EXCLUDED]
+|  |  |  |     |  +-- vw6U504Cd3rDhKA1oQ68qAxUhkU= [EXCLUDED]
+|  |  |  |     |  +-- w_LJIVLgHao0aA_5x8hFBJGD3yc= [EXCLUDED]
+|  |  |  |     |  +-- wCI1jl4pO5_rrbf_wXxVv8RDBrs= [EXCLUDED]
+|  |  |  |     |  +-- Xf7EjT2uGbtXxPv0dTd3bgTu5_w= [EXCLUDED]
+|  |  |  |     |  +-- y6_JqBt2cvBildFupKgLQwNj36g= [EXCLUDED]
+|  |  |  |     |  +-- YS4yAjDm4HPkzUUqwPl_DOSFFII= [EXCLUDED]
+|  |  |  |     |  +-- yu2w2JtIlbMc4kiY8mIRigKhZX0= [EXCLUDED]
+|  |  |  |     |  +-- Z_LWO0jlGJXUYzxFARE+IYzJoNg= [EXCLUDED]
+|  |  |  |     |  +-- z3awoiwbv_twHyxm0AGxA_JByus= [EXCLUDED]
+|  |  |  |     |  +-- zEk4re6EEBPMD6Fn9AG5HfE6DfY= [EXCLUDED]
+|  |  |  |     |  +-- ZOdk7OdEv8Vxz4tdOnS6JvAuJc8= [EXCLUDED]
+|  |  |  |     |  +-- zWhZV+dYd4Txu85RtMaREKA4q2g= [EXCLUDED]
+|  |  |  |     |  \-- ZxmPorTbjqZy_bXxOnI3HqSSmME= [EXCLUDED]
+|  |  |  |     \-- merge-state [EXCLUDED]
+|  |  |  +-- java_res [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- processDebugJavaRes [DIR EXCLUDED]
+|  |  |  |  |     \-- out [DIR EXCLUDED]
+|  |  |  |  |        +-- com [DIR EXCLUDED]
+|  |  |  |  |        |  \-- hereliesaz [DIR EXCLUDED]
+|  |  |  |  |        |     \-- nhen [DIR EXCLUDED]
+|  |  |  |  |        |        \-- ui [DIR EXCLUDED]
+|  |  |  |  |        |           \-- theme [DIR EXCLUDED]
+|  |  |  |  |        \-- META-INF [DIR EXCLUDED]
+|  |  |  |  |           \-- app_debug.kotlin_module [EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- processReleaseJavaRes [DIR EXCLUDED]
+|  |  |  |        \-- out [DIR EXCLUDED]
+|  |  |  |           +-- com [DIR EXCLUDED]
+|  |  |  |           |  \-- hereliesaz [DIR EXCLUDED]
+|  |  |  |           |     \-- nhen [DIR EXCLUDED]
+|  |  |  |           |        \-- ui [DIR EXCLUDED]
+|  |  |  |           |           \-- theme [DIR EXCLUDED]
+|  |  |  |           +-- META-INF [DIR EXCLUDED]
+|  |  |  |           |  \-- app_release.kotlin_module [EXCLUDED]
+|  |  |  |           \-- kotlin-tooling-metadata.json [EXCLUDED]
+|  |  |  +-- linked_resources_binary_format [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- processDebugResources [DIR EXCLUDED]
+|  |  |  |  |     +-- linked-resources-binary-format-debug.ap_ [EXCLUDED]
+|  |  |  |  |     \-- output-metadata.json [EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- processReleaseResources [DIR EXCLUDED]
+|  |  |  |        +-- linked-resources-binary-format-release.ap_ [EXCLUDED]
+|  |  |  |        \-- output-metadata.json [EXCLUDED]
+|  |  |  +-- lint_vital_intermediate_text_report [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- lintVitalReportRelease [DIR EXCLUDED]
+|  |  |  |        \-- lint-results-release.txt [EXCLUDED]
+|  |  |  +-- lint_vital_output [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- lintVitalRelease [DIR EXCLUDED]
+|  |  |  |        \-- lint-vital-output.dat [EXCLUDED]
+|  |  |  +-- lint_vital_partial_results [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- lintVitalAnalyzeRelease [DIR EXCLUDED]
+|  |  |  |        \-- out [DIR EXCLUDED]
+|  |  |  |           \-- lint-resources.xml [EXCLUDED]
+|  |  |  +-- lint_vital_report_lint_model [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- generateReleaseLintVitalReportModel [DIR EXCLUDED]
+|  |  |  |        +-- module.xml [EXCLUDED]
+|  |  |  |        +-- release.xml [EXCLUDED]
+|  |  |  |        +-- release-artifact-dependencies.xml [EXCLUDED]
+|  |  |  |        \-- release-artifact-libraries.xml [EXCLUDED]
+|  |  |  +-- lint_vital_return_value [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- lintVitalReportRelease [DIR EXCLUDED]
+|  |  |  |        \-- return-value-release.txt [EXCLUDED]
+|  |  |  +-- lint-cache [DIR EXCLUDED]
+|  |  |  |  +-- lintVitalAnalyzeRelease [DIR EXCLUDED]
+|  |  |  |  |  +-- maven.google [DIR EXCLUDED]
+|  |  |  |  |  |  +-- androidx [DIR EXCLUDED]
+|  |  |  |  |  |  |  +-- activity [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- group-index.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- appcompat [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- group-index.xml [EXCLUDED]
+|  |  |  |  |  |  |  +-- compose [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- group-index.xml [EXCLUDED]
+|  |  |  |  |  |  |  \-- lifecycle [DIR EXCLUDED]
+|  |  |  |  |  |  |     \-- group-index.xml [EXCLUDED]
+|  |  |  |  |  |  +-- com [DIR EXCLUDED]
+|  |  |  |  |  |  |  +-- android [DIR EXCLUDED]
+|  |  |  |  |  |  |  |  \-- application [DIR EXCLUDED]
+|  |  |  |  |  |  |  |     \-- group-index.xml [EXCLUDED]
+|  |  |  |  |  |  |  \-- google [DIR EXCLUDED]
+|  |  |  |  |  |  |     +-- android [DIR EXCLUDED]
+|  |  |  |  |  |  |     |  \-- material [DIR EXCLUDED]
+|  |  |  |  |  |  |     |     \-- group-index.xml [EXCLUDED]
+|  |  |  |  |  |  |     \-- devtools [DIR EXCLUDED]
+|  |  |  |  |  |  |        \-- ksp [DIR EXCLUDED]
+|  |  |  |  |  |  |           \-- group-index.xml [EXCLUDED]
+|  |  |  |  |  |  \-- master-index.xml [EXCLUDED]
+|  |  |  |  |  +-- migrated-jars [DIR EXCLUDED]
+|  |  |  |  |  |  +-- androidx.compose.runtime.lint.RuntimeIssueRegistry-043bd12f36c6fac1..jar [EXCLUDED]
+|  |  |  |  |  |  \-- androidx.compose.ui.lint.UiIssueRegistry-5035376bf6496a97..jar [EXCLUDED]
+|  |  |  |  |  +-- sdk_index [DIR EXCLUDED]
+|  |  |  |  |  |  \-- snapshot.gz [EXCLUDED]
+|  |  |  |  |  \-- lint-cache-version.txt [EXCLUDED]
+|  |  |  |  \-- lintVitalReportRelease [DIR EXCLUDED]
+|  |  |  |     \-- lint-cache-version.txt [EXCLUDED]
+|  |  |  +-- local_only_symbol_list [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- parseDebugLocalResources [DIR EXCLUDED]
+|  |  |  |  |     \-- R-def.txt [EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- parseReleaseLocalResources [DIR EXCLUDED]
+|  |  |  |        \-- R-def.txt [EXCLUDED]
+|  |  |  +-- manifest_merge_blame_file [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- processDebugMainManifest [DIR EXCLUDED]
+|  |  |  |  |     \-- manifest-merger-blame-debug-report.txt [EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- processReleaseMainManifest [DIR EXCLUDED]
+|  |  |  |        \-- manifest-merger-blame-release-report.txt [EXCLUDED]
+|  |  |  +-- merged_art_profile [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- mergeReleaseArtProfile [DIR EXCLUDED]
+|  |  |  |        \-- baseline-prof.txt [EXCLUDED]
+|  |  |  +-- merged_java_res [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- mergeDebugJavaResource [DIR EXCLUDED]
+|  |  |  |  |     \-- base.jar [EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- mergeReleaseJavaResource [DIR EXCLUDED]
+|  |  |  |        \-- base.jar [EXCLUDED]
+|  |  |  +-- merged_jni_libs [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- mergeDebugJniLibFolders [DIR EXCLUDED]
+|  |  |  |  |     \-- out [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- mergeReleaseJniLibFolders [DIR EXCLUDED]
+|  |  |  |        \-- out [DIR EXCLUDED]
+|  |  |  +-- merged_manifest [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- processDebugMainManifest [DIR EXCLUDED]
+|  |  |  |  |     \-- AndroidManifest.xml [EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- processReleaseMainManifest [DIR EXCLUDED]
+|  |  |  |        \-- AndroidManifest.xml [EXCLUDED]
+|  |  |  +-- merged_manifests [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- processDebugManifest [DIR EXCLUDED]
+|  |  |  |  |     +-- AndroidManifest.xml [EXCLUDED]
+|  |  |  |  |     \-- output-metadata.json [EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- processReleaseManifest [DIR EXCLUDED]
+|  |  |  |        +-- AndroidManifest.xml [EXCLUDED]
+|  |  |  |        \-- output-metadata.json [EXCLUDED]
+|  |  |  +-- merged_native_libs [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- mergeDebugNativeLibs [DIR EXCLUDED]
+|  |  |  |  |     \-- out [DIR EXCLUDED]
+|  |  |  |  |        \-- lib [DIR EXCLUDED]
+|  |  |  |  |           +-- arm64-v8a [DIR EXCLUDED]
+|  |  |  |  |           |  \-- libandroidx.graphics.path.so [EXCLUDED]
+|  |  |  |  |           +-- armeabi-v7a [DIR EXCLUDED]
+|  |  |  |  |           |  \-- libandroidx.graphics.path.so [EXCLUDED]
+|  |  |  |  |           +-- x86 [DIR EXCLUDED]
+|  |  |  |  |           |  \-- libandroidx.graphics.path.so [EXCLUDED]
+|  |  |  |  |           \-- x86_64 [DIR EXCLUDED]
+|  |  |  |  |              \-- libandroidx.graphics.path.so [EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- mergeReleaseNativeLibs [DIR EXCLUDED]
+|  |  |  |        \-- out [DIR EXCLUDED]
+|  |  |  |           \-- lib [DIR EXCLUDED]
+|  |  |  |              +-- arm64-v8a [DIR EXCLUDED]
+|  |  |  |              |  \-- libandroidx.graphics.path.so [EXCLUDED]
+|  |  |  |              +-- armeabi-v7a [DIR EXCLUDED]
+|  |  |  |              |  \-- libandroidx.graphics.path.so [EXCLUDED]
+|  |  |  |              +-- x86 [DIR EXCLUDED]
+|  |  |  |              |  \-- libandroidx.graphics.path.so [EXCLUDED]
+|  |  |  |              \-- x86_64 [DIR EXCLUDED]
+|  |  |  |                 \-- libandroidx.graphics.path.so [EXCLUDED]
+|  |  |  +-- merged_res [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- mergeDebugResources [DIR EXCLUDED]
+|  |  |  |  |     +-- drawable_card_background.xml.flat [EXCLUDED]
+|  |  |  |  |     +-- drawable_ic_launcher_background.xml.flat [EXCLUDED]
+|  |  |  |  |     +-- drawable_ic_launcher_foreground.xml.flat [EXCLUDED]
+|  |  |  |  |     +-- drawable_nhen_logo.png.flat [EXCLUDED]
+|  |  |  |  |     +-- drawable_qr_code.png.flat [EXCLUDED]
+|  |  |  |  |     +-- drawable_transparent_bg.xml.flat [EXCLUDED]
+|  |  |  |  |     +-- font_troublemarker.otf.flat [EXCLUDED]
+|  |  |  |  |     +-- font_troublemarker_font.xml.flat [EXCLUDED]
+|  |  |  |  |     +-- layout_activity_main.xml.flat [EXCLUDED]
+|  |  |  |  |     +-- mipmap-anydpi-v26_ic_launcher.xml.flat [EXCLUDED]
+|  |  |  |  |     +-- mipmap-anydpi-v26_ic_launcher_round.xml.flat [EXCLUDED]
+|  |  |  |  |     +-- mipmap-hdpi_ic_launcher.webp.flat [EXCLUDED]
+|  |  |  |  |     +-- mipmap-hdpi_ic_launcher_background.webp.flat [EXCLUDED]
+|  |  |  |  |     +-- mipmap-hdpi_ic_launcher_foreground.webp.flat [EXCLUDED]
+|  |  |  |  |     +-- mipmap-hdpi_ic_launcher_round.webp.flat [EXCLUDED]
+|  |  |  |  |     +-- mipmap-mdpi_ic_launcher.webp.flat [EXCLUDED]
+|  |  |  |  |     +-- mipmap-mdpi_ic_launcher_background.webp.flat [EXCLUDED]
+|  |  |  |  |     +-- mipmap-mdpi_ic_launcher_foreground.webp.flat [EXCLUDED]
+|  |  |  |  |     +-- mipmap-mdpi_ic_launcher_round.webp.flat [EXCLUDED]
+|  |  |  |  |     +-- mipmap-xhdpi_ic_launcher.webp.flat [EXCLUDED]
+|  |  |  |  |     +-- mipmap-xhdpi_ic_launcher_background.webp.flat [EXCLUDED]
+|  |  |  |  |     +-- mipmap-xhdpi_ic_launcher_foreground.webp.flat [EXCLUDED]
+|  |  |  |  |     +-- mipmap-xhdpi_ic_launcher_round.webp.flat [EXCLUDED]
+|  |  |  |  |     +-- mipmap-xxhdpi_ic_launcher.webp.flat [EXCLUDED]
+|  |  |  |  |     +-- mipmap-xxhdpi_ic_launcher_background.webp.flat [EXCLUDED]
+|  |  |  |  |     +-- mipmap-xxhdpi_ic_launcher_foreground.webp.flat [EXCLUDED]
+|  |  |  |  |     +-- mipmap-xxhdpi_ic_launcher_round.webp.flat [EXCLUDED]
+|  |  |  |  |     +-- mipmap-xxxhdpi_ic_launcher.webp.flat [EXCLUDED]
+|  |  |  |  |     +-- mipmap-xxxhdpi_ic_launcher_background.webp.flat [EXCLUDED]
+|  |  |  |  |     +-- mipmap-xxxhdpi_ic_launcher_foreground.webp.flat [EXCLUDED]
+|  |  |  |  |     +-- mipmap-xxxhdpi_ic_launcher_round.webp.flat [EXCLUDED]
+|  |  |  |  |     +-- values_values.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-af_values-af.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-am_values-am.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-ar_values-ar.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-as_values-as.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-az_values-az.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-b+es+419_values-b+es+419.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-b+sr+Latn_values-b+sr+Latn.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-be_values-be.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-bg_values-bg.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-bn_values-bn.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-bs_values-bs.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-ca_values-ca.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-cs_values-cs.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-da_values-da.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-de_values-de.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-el_values-el.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-en-rAU_values-en-rAU.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-en-rCA_values-en-rCA.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-en-rGB_values-en-rGB.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-en-rIN_values-en-rIN.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-en-rXC_values-en-rXC.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-es_values-es.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-es-rUS_values-es-rUS.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-et_values-et.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-eu_values-eu.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-fa_values-fa.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-fi_values-fi.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-fr_values-fr.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-fr-rCA_values-fr-rCA.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-gl_values-gl.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-gu_values-gu.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-h320dp-port-v13_values-h320dp-port-v13.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-h360dp-land-v13_values-h360dp-land-v13.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-h480dp-land-v13_values-h480dp-land-v13.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-h480dp-v13_values-h480dp-v13.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-h550dp-port-v13_values-h550dp-port-v13.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-h720dp-v13_values-h720dp-v13.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-hdpi-v4_values-hdpi-v4.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-hi_values-hi.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-hr_values-hr.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-hu_values-hu.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-hy_values-hy.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-in_values-in.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-is_values-is.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-it_values-it.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-iw_values-iw.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-ja_values-ja.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-ka_values-ka.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-kk_values-kk.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-km_values-km.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-kn_values-kn.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-ko_values-ko.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-ky_values-ky.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-land_values-land.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-large-v4_values-large-v4.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-ldltr-v21_values-ldltr-v21.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-ldrtl-v17_values-ldrtl-v17.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-lo_values-lo.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-lt_values-lt.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-lv_values-lv.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-mk_values-mk.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-ml_values-ml.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-mn_values-mn.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-mr_values-mr.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-ms_values-ms.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-my_values-my.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-nb_values-nb.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-ne_values-ne.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-night-v8_values-night-v8.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-nl_values-nl.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-or_values-or.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-pa_values-pa.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-pl_values-pl.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-port_values-port.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-pt_values-pt.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-pt-rBR_values-pt-rBR.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-pt-rPT_values-pt-rPT.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-ro_values-ro.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-ru_values-ru.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-si_values-si.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-sk_values-sk.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-sl_values-sl.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-sq_values-sq.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-sr_values-sr.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-sv_values-sv.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-sw_values-sw.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-sw600dp-v13_values-sw600dp-v13.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-ta_values-ta.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-te_values-te.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-th_values-th.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-tl_values-tl.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-tr_values-tr.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-uk_values-uk.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-ur_values-ur.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-uz_values-uz.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-v16_values-v16.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-v17_values-v17.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-v18_values-v18.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-v21_values-v21.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-v22_values-v22.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-v23_values-v23.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-v24_values-v24.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-v25_values-v25.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-v26_values-v26.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-v28_values-v28.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-v30_values-v30.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-v31_values-v31.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-v34_values-v34.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-v35_values-v35.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-vi_values-vi.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-w320dp-land-v13_values-w320dp-land-v13.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-w360dp-port-v13_values-w360dp-port-v13.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-w400dp-port-v13_values-w400dp-port-v13.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-w600dp-land-v13_values-w600dp-land-v13.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-watch-v20_values-watch-v20.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-watch-v21_values-watch-v21.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-xlarge-v4_values-xlarge-v4.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-zh-rCN_values-zh-rCN.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-zh-rHK_values-zh-rHK.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-zh-rTW_values-zh-rTW.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- values-zu_values-zu.arsc.flat [EXCLUDED]
+|  |  |  |  |     +-- xml_backup_rules.xml.flat [EXCLUDED]
+|  |  |  |  |     \-- xml_data_extraction_rules.xml.flat [EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- mergeReleaseResources [DIR EXCLUDED]
+|  |  |  |        +-- drawable_card_background.xml.flat [EXCLUDED]
+|  |  |  |        +-- drawable_ic_launcher_background.xml.flat [EXCLUDED]
+|  |  |  |        +-- drawable_ic_launcher_foreground.xml.flat [EXCLUDED]
+|  |  |  |        +-- drawable_nhen_logo.png.flat [EXCLUDED]
+|  |  |  |        +-- drawable_qr_code.png.flat [EXCLUDED]
+|  |  |  |        +-- drawable_transparent_bg.xml.flat [EXCLUDED]
+|  |  |  |        +-- font_troublemarker.otf.flat [EXCLUDED]
+|  |  |  |        +-- font_troublemarker_font.xml.flat [EXCLUDED]
+|  |  |  |        +-- layout_activity_main.xml.flat [EXCLUDED]
+|  |  |  |        +-- mipmap-anydpi-v26_ic_launcher.xml.flat [EXCLUDED]
+|  |  |  |        +-- mipmap-anydpi-v26_ic_launcher_round.xml.flat [EXCLUDED]
+|  |  |  |        +-- mipmap-hdpi_ic_launcher.webp.flat [EXCLUDED]
+|  |  |  |        +-- mipmap-hdpi_ic_launcher_background.webp.flat [EXCLUDED]
+|  |  |  |        +-- mipmap-hdpi_ic_launcher_foreground.webp.flat [EXCLUDED]
+|  |  |  |        +-- mipmap-hdpi_ic_launcher_round.webp.flat [EXCLUDED]
+|  |  |  |        +-- mipmap-mdpi_ic_launcher.webp.flat [EXCLUDED]
+|  |  |  |        +-- mipmap-mdpi_ic_launcher_background.webp.flat [EXCLUDED]
+|  |  |  |        +-- mipmap-mdpi_ic_launcher_foreground.webp.flat [EXCLUDED]
+|  |  |  |        +-- mipmap-mdpi_ic_launcher_round.webp.flat [EXCLUDED]
+|  |  |  |        +-- mipmap-xhdpi_ic_launcher.webp.flat [EXCLUDED]
+|  |  |  |        +-- mipmap-xhdpi_ic_launcher_background.webp.flat [EXCLUDED]
+|  |  |  |        +-- mipmap-xhdpi_ic_launcher_foreground.webp.flat [EXCLUDED]
+|  |  |  |        +-- mipmap-xhdpi_ic_launcher_round.webp.flat [EXCLUDED]
+|  |  |  |        +-- mipmap-xxhdpi_ic_launcher.webp.flat [EXCLUDED]
+|  |  |  |        +-- mipmap-xxhdpi_ic_launcher_background.webp.flat [EXCLUDED]
+|  |  |  |        +-- mipmap-xxhdpi_ic_launcher_foreground.webp.flat [EXCLUDED]
+|  |  |  |        +-- mipmap-xxhdpi_ic_launcher_round.webp.flat [EXCLUDED]
+|  |  |  |        +-- mipmap-xxxhdpi_ic_launcher.webp.flat [EXCLUDED]
+|  |  |  |        +-- mipmap-xxxhdpi_ic_launcher_background.webp.flat [EXCLUDED]
+|  |  |  |        +-- mipmap-xxxhdpi_ic_launcher_foreground.webp.flat [EXCLUDED]
+|  |  |  |        +-- mipmap-xxxhdpi_ic_launcher_round.webp.flat [EXCLUDED]
+|  |  |  |        +-- values_values.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-af_values-af.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-am_values-am.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-ar_values-ar.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-as_values-as.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-az_values-az.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-b+es+419_values-b+es+419.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-b+sr+Latn_values-b+sr+Latn.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-be_values-be.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-bg_values-bg.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-bn_values-bn.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-bs_values-bs.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-ca_values-ca.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-cs_values-cs.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-da_values-da.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-de_values-de.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-el_values-el.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-en-rAU_values-en-rAU.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-en-rCA_values-en-rCA.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-en-rGB_values-en-rGB.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-en-rIN_values-en-rIN.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-en-rXC_values-en-rXC.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-es_values-es.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-es-rUS_values-es-rUS.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-et_values-et.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-eu_values-eu.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-fa_values-fa.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-fi_values-fi.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-fr_values-fr.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-fr-rCA_values-fr-rCA.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-gl_values-gl.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-gu_values-gu.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-h320dp-port-v13_values-h320dp-port-v13.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-h360dp-land-v13_values-h360dp-land-v13.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-h480dp-land-v13_values-h480dp-land-v13.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-h480dp-v13_values-h480dp-v13.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-h550dp-port-v13_values-h550dp-port-v13.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-h720dp-v13_values-h720dp-v13.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-hdpi-v4_values-hdpi-v4.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-hi_values-hi.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-hr_values-hr.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-hu_values-hu.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-hy_values-hy.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-in_values-in.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-is_values-is.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-it_values-it.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-iw_values-iw.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-ja_values-ja.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-ka_values-ka.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-kk_values-kk.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-km_values-km.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-kn_values-kn.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-ko_values-ko.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-ky_values-ky.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-land_values-land.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-large-v4_values-large-v4.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-ldltr-v21_values-ldltr-v21.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-ldrtl-v17_values-ldrtl-v17.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-lo_values-lo.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-lt_values-lt.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-lv_values-lv.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-mk_values-mk.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-ml_values-ml.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-mn_values-mn.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-mr_values-mr.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-ms_values-ms.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-my_values-my.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-nb_values-nb.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-ne_values-ne.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-night-v8_values-night-v8.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-nl_values-nl.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-or_values-or.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-pa_values-pa.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-pl_values-pl.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-port_values-port.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-pt_values-pt.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-pt-rBR_values-pt-rBR.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-pt-rPT_values-pt-rPT.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-ro_values-ro.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-ru_values-ru.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-si_values-si.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-sk_values-sk.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-sl_values-sl.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-sq_values-sq.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-sr_values-sr.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-sv_values-sv.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-sw_values-sw.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-sw600dp-v13_values-sw600dp-v13.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-ta_values-ta.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-te_values-te.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-th_values-th.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-tl_values-tl.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-tr_values-tr.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-uk_values-uk.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-ur_values-ur.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-uz_values-uz.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-v16_values-v16.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-v17_values-v17.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-v18_values-v18.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-v21_values-v21.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-v22_values-v22.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-v23_values-v23.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-v24_values-v24.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-v25_values-v25.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-v26_values-v26.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-v28_values-v28.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-v30_values-v30.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-v31_values-v31.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-v34_values-v34.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-v35_values-v35.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-vi_values-vi.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-w320dp-land-v13_values-w320dp-land-v13.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-w360dp-port-v13_values-w360dp-port-v13.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-w400dp-port-v13_values-w400dp-port-v13.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-w600dp-land-v13_values-w600dp-land-v13.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-watch-v20_values-watch-v20.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-watch-v21_values-watch-v21.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-xlarge-v4_values-xlarge-v4.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-zh-rCN_values-zh-rCN.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-zh-rHK_values-zh-rHK.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-zh-rTW_values-zh-rTW.arsc.flat [EXCLUDED]
+|  |  |  |        +-- values-zu_values-zu.arsc.flat [EXCLUDED]
+|  |  |  |        +-- xml_backup_rules.xml.flat [EXCLUDED]
+|  |  |  |        \-- xml_data_extraction_rules.xml.flat [EXCLUDED]
+|  |  |  +-- merged_res_blame_folder [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- mergeDebugResources [DIR EXCLUDED]
+|  |  |  |  |     \-- out [DIR EXCLUDED]
+|  |  |  |  |        +-- multi-v2 [DIR EXCLUDED]
+|  |  |  |  |        |  +-- mergeDebugResources.json [EXCLUDED]
+|  |  |  |  |        |  +-- values.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-af.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-am.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-ar.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-as.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-az.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-b+es+419.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-b+sr+Latn.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-be.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-bg.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-bn.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-bs.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-ca.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-cs.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-da.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-de.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-el.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-en-rAU.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-en-rCA.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-en-rGB.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-en-rIN.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-en-rXC.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-es.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-es-rUS.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-et.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-eu.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-fa.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-fi.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-fr.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-fr-rCA.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-gl.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-gu.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-h320dp-port-v13.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-h360dp-land-v13.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-h480dp-land-v13.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-h480dp-v13.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-h550dp-port-v13.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-h720dp-v13.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-hdpi-v4.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-hi.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-hr.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-hu.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-hy.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-in.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-is.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-it.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-iw.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-ja.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-ka.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-kk.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-km.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-kn.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-ko.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-ky.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-land.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-large-v4.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-ldltr-v21.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-ldrtl-v17.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-lo.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-lt.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-lv.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-mk.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-ml.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-mn.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-mr.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-ms.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-my.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-nb.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-ne.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-night-v8.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-nl.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-or.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-pa.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-pl.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-port.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-pt.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-pt-rBR.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-pt-rPT.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-ro.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-ru.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-si.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-sk.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-sl.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-sq.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-sr.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-sv.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-sw.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-sw600dp-v13.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-ta.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-te.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-th.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-tl.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-tr.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-uk.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-ur.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-uz.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-v16.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-v17.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-v18.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-v21.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-v22.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-v23.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-v24.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-v25.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-v26.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-v28.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-v30.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-v31.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-v34.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-v35.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-vi.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-w320dp-land-v13.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-w360dp-port-v13.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-w400dp-port-v13.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-w600dp-land-v13.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-watch-v20.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-watch-v21.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-xlarge-v4.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-zh-rCN.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-zh-rHK.json [EXCLUDED]
+|  |  |  |  |        |  +-- values-zh-rTW.json [EXCLUDED]
+|  |  |  |  |        |  \-- values-zu.json [EXCLUDED]
+|  |  |  |  |        \-- single [DIR EXCLUDED]
+|  |  |  |  |           \-- mergeDebugResources.json [EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- mergeReleaseResources [DIR EXCLUDED]
+|  |  |  |        \-- out [DIR EXCLUDED]
+|  |  |  |           +-- multi-v2 [DIR EXCLUDED]
+|  |  |  |           |  +-- mergeReleaseResources.json [EXCLUDED]
+|  |  |  |           |  +-- values.json [EXCLUDED]
+|  |  |  |           |  +-- values-af.json [EXCLUDED]
+|  |  |  |           |  +-- values-am.json [EXCLUDED]
+|  |  |  |           |  +-- values-ar.json [EXCLUDED]
+|  |  |  |           |  +-- values-as.json [EXCLUDED]
+|  |  |  |           |  +-- values-az.json [EXCLUDED]
+|  |  |  |           |  +-- values-b+es+419.json [EXCLUDED]
+|  |  |  |           |  +-- values-b+sr+Latn.json [EXCLUDED]
+|  |  |  |           |  +-- values-be.json [EXCLUDED]
+|  |  |  |           |  +-- values-bg.json [EXCLUDED]
+|  |  |  |           |  +-- values-bn.json [EXCLUDED]
+|  |  |  |           |  +-- values-bs.json [EXCLUDED]
+|  |  |  |           |  +-- values-ca.json [EXCLUDED]
+|  |  |  |           |  +-- values-cs.json [EXCLUDED]
+|  |  |  |           |  +-- values-da.json [EXCLUDED]
+|  |  |  |           |  +-- values-de.json [EXCLUDED]
+|  |  |  |           |  +-- values-el.json [EXCLUDED]
+|  |  |  |           |  +-- values-en-rAU.json [EXCLUDED]
+|  |  |  |           |  +-- values-en-rCA.json [EXCLUDED]
+|  |  |  |           |  +-- values-en-rGB.json [EXCLUDED]
+|  |  |  |           |  +-- values-en-rIN.json [EXCLUDED]
+|  |  |  |           |  +-- values-en-rXC.json [EXCLUDED]
+|  |  |  |           |  +-- values-es.json [EXCLUDED]
+|  |  |  |           |  +-- values-es-rUS.json [EXCLUDED]
+|  |  |  |           |  +-- values-et.json [EXCLUDED]
+|  |  |  |           |  +-- values-eu.json [EXCLUDED]
+|  |  |  |           |  +-- values-fa.json [EXCLUDED]
+|  |  |  |           |  +-- values-fi.json [EXCLUDED]
+|  |  |  |           |  +-- values-fr.json [EXCLUDED]
+|  |  |  |           |  +-- values-fr-rCA.json [EXCLUDED]
+|  |  |  |           |  +-- values-gl.json [EXCLUDED]
+|  |  |  |           |  +-- values-gu.json [EXCLUDED]
+|  |  |  |           |  +-- values-h320dp-port-v13.json [EXCLUDED]
+|  |  |  |           |  +-- values-h360dp-land-v13.json [EXCLUDED]
+|  |  |  |           |  +-- values-h480dp-land-v13.json [EXCLUDED]
+|  |  |  |           |  +-- values-h480dp-v13.json [EXCLUDED]
+|  |  |  |           |  +-- values-h550dp-port-v13.json [EXCLUDED]
+|  |  |  |           |  +-- values-h720dp-v13.json [EXCLUDED]
+|  |  |  |           |  +-- values-hdpi-v4.json [EXCLUDED]
+|  |  |  |           |  +-- values-hi.json [EXCLUDED]
+|  |  |  |           |  +-- values-hr.json [EXCLUDED]
+|  |  |  |           |  +-- values-hu.json [EXCLUDED]
+|  |  |  |           |  +-- values-hy.json [EXCLUDED]
+|  |  |  |           |  +-- values-in.json [EXCLUDED]
+|  |  |  |           |  +-- values-is.json [EXCLUDED]
+|  |  |  |           |  +-- values-it.json [EXCLUDED]
+|  |  |  |           |  +-- values-iw.json [EXCLUDED]
+|  |  |  |           |  +-- values-ja.json [EXCLUDED]
+|  |  |  |           |  +-- values-ka.json [EXCLUDED]
+|  |  |  |           |  +-- values-kk.json [EXCLUDED]
+|  |  |  |           |  +-- values-km.json [EXCLUDED]
+|  |  |  |           |  +-- values-kn.json [EXCLUDED]
+|  |  |  |           |  +-- values-ko.json [EXCLUDED]
+|  |  |  |           |  +-- values-ky.json [EXCLUDED]
+|  |  |  |           |  +-- values-land.json [EXCLUDED]
+|  |  |  |           |  +-- values-large-v4.json [EXCLUDED]
+|  |  |  |           |  +-- values-ldltr-v21.json [EXCLUDED]
+|  |  |  |           |  +-- values-ldrtl-v17.json [EXCLUDED]
+|  |  |  |           |  +-- values-lo.json [EXCLUDED]
+|  |  |  |           |  +-- values-lt.json [EXCLUDED]
+|  |  |  |           |  +-- values-lv.json [EXCLUDED]
+|  |  |  |           |  +-- values-mk.json [EXCLUDED]
+|  |  |  |           |  +-- values-ml.json [EXCLUDED]
+|  |  |  |           |  +-- values-mn.json [EXCLUDED]
+|  |  |  |           |  +-- values-mr.json [EXCLUDED]
+|  |  |  |           |  +-- values-ms.json [EXCLUDED]
+|  |  |  |           |  +-- values-my.json [EXCLUDED]
+|  |  |  |           |  +-- values-nb.json [EXCLUDED]
+|  |  |  |           |  +-- values-ne.json [EXCLUDED]
+|  |  |  |           |  +-- values-night-v8.json [EXCLUDED]
+|  |  |  |           |  +-- values-nl.json [EXCLUDED]
+|  |  |  |           |  +-- values-or.json [EXCLUDED]
+|  |  |  |           |  +-- values-pa.json [EXCLUDED]
+|  |  |  |           |  +-- values-pl.json [EXCLUDED]
+|  |  |  |           |  +-- values-port.json [EXCLUDED]
+|  |  |  |           |  +-- values-pt.json [EXCLUDED]
+|  |  |  |           |  +-- values-pt-rBR.json [EXCLUDED]
+|  |  |  |           |  +-- values-pt-rPT.json [EXCLUDED]
+|  |  |  |           |  +-- values-ro.json [EXCLUDED]
+|  |  |  |           |  +-- values-ru.json [EXCLUDED]
+|  |  |  |           |  +-- values-si.json [EXCLUDED]
+|  |  |  |           |  +-- values-sk.json [EXCLUDED]
+|  |  |  |           |  +-- values-sl.json [EXCLUDED]
+|  |  |  |           |  +-- values-sq.json [EXCLUDED]
+|  |  |  |           |  +-- values-sr.json [EXCLUDED]
+|  |  |  |           |  +-- values-sv.json [EXCLUDED]
+|  |  |  |           |  +-- values-sw.json [EXCLUDED]
+|  |  |  |           |  +-- values-sw600dp-v13.json [EXCLUDED]
+|  |  |  |           |  +-- values-ta.json [EXCLUDED]
+|  |  |  |           |  +-- values-te.json [EXCLUDED]
+|  |  |  |           |  +-- values-th.json [EXCLUDED]
+|  |  |  |           |  +-- values-tl.json [EXCLUDED]
+|  |  |  |           |  +-- values-tr.json [EXCLUDED]
+|  |  |  |           |  +-- values-uk.json [EXCLUDED]
+|  |  |  |           |  +-- values-ur.json [EXCLUDED]
+|  |  |  |           |  +-- values-uz.json [EXCLUDED]
+|  |  |  |           |  +-- values-v16.json [EXCLUDED]
+|  |  |  |           |  +-- values-v17.json [EXCLUDED]
+|  |  |  |           |  +-- values-v18.json [EXCLUDED]
+|  |  |  |           |  +-- values-v21.json [EXCLUDED]
+|  |  |  |           |  +-- values-v22.json [EXCLUDED]
+|  |  |  |           |  +-- values-v23.json [EXCLUDED]
+|  |  |  |           |  +-- values-v24.json [EXCLUDED]
+|  |  |  |           |  +-- values-v25.json [EXCLUDED]
+|  |  |  |           |  +-- values-v26.json [EXCLUDED]
+|  |  |  |           |  +-- values-v28.json [EXCLUDED]
+|  |  |  |           |  +-- values-v30.json [EXCLUDED]
+|  |  |  |           |  +-- values-v31.json [EXCLUDED]
+|  |  |  |           |  +-- values-v34.json [EXCLUDED]
+|  |  |  |           |  +-- values-v35.json [EXCLUDED]
+|  |  |  |           |  +-- values-vi.json [EXCLUDED]
+|  |  |  |           |  +-- values-w320dp-land-v13.json [EXCLUDED]
+|  |  |  |           |  +-- values-w360dp-port-v13.json [EXCLUDED]
+|  |  |  |           |  +-- values-w400dp-port-v13.json [EXCLUDED]
+|  |  |  |           |  +-- values-w600dp-land-v13.json [EXCLUDED]
+|  |  |  |           |  +-- values-watch-v20.json [EXCLUDED]
+|  |  |  |           |  +-- values-watch-v21.json [EXCLUDED]
+|  |  |  |           |  +-- values-xlarge-v4.json [EXCLUDED]
+|  |  |  |           |  +-- values-zh-rCN.json [EXCLUDED]
+|  |  |  |           |  +-- values-zh-rHK.json [EXCLUDED]
+|  |  |  |           |  +-- values-zh-rTW.json [EXCLUDED]
+|  |  |  |           |  \-- values-zu.json [EXCLUDED]
+|  |  |  |           \-- single [DIR EXCLUDED]
+|  |  |  |              \-- mergeReleaseResources.json [EXCLUDED]
+|  |  |  +-- merged_shaders [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- mergeDebugShaders [DIR EXCLUDED]
+|  |  |  |  |     \-- out [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- mergeReleaseShaders [DIR EXCLUDED]
+|  |  |  |        \-- out [DIR EXCLUDED]
+|  |  |  +-- merged_startup_profile [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- mergeReleaseStartupProfile [DIR EXCLUDED]
+|  |  |  +-- merged_test_only_native_libs [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- mergeDebugNativeLibs [DIR EXCLUDED]
+|  |  |  |  |     \-- out [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- mergeReleaseNativeLibs [DIR EXCLUDED]
+|  |  |  |        \-- out [DIR EXCLUDED]
+|  |  |  +-- metadata_library_dependencies_report [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- collectReleaseDependencies [DIR EXCLUDED]
+|  |  |  |        \-- dependencies.pb [EXCLUDED]
+|  |  |  +-- mixed_scope_dex_archive [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- dexBuilderDebug [DIR EXCLUDED]
+|  |  |  |  |     \-- out [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- dexBuilderRelease [DIR EXCLUDED]
+|  |  |  |        \-- out [DIR EXCLUDED]
+|  |  |  +-- native_symbol_tables [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- extractReleaseNativeSymbolTables [DIR EXCLUDED]
+|  |  |  |        \-- out [DIR EXCLUDED]
+|  |  |  +-- navigation_json [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- extractDeepLinksDebug [DIR EXCLUDED]
+|  |  |  |  |     \-- navigation.json [EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- extractDeepLinksRelease [DIR EXCLUDED]
+|  |  |  |        \-- navigation.json [EXCLUDED]
+|  |  |  +-- nested_resources_validation_report [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- generateDebugResources [DIR EXCLUDED]
+|  |  |  |  |     \-- nestedResourcesValidationReport.txt [EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- generateReleaseResources [DIR EXCLUDED]
+|  |  |  |        \-- nestedResourcesValidationReport.txt [EXCLUDED]
+|  |  |  +-- optimized_processed_res [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- optimizeReleaseResources [DIR EXCLUDED]
+|  |  |  |        +-- output-metadata.json [EXCLUDED]
+|  |  |  |        \-- resources-release-optimize.ap_ [EXCLUDED]
+|  |  |  +-- packaged_manifests [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- processDebugManifestForPackage [DIR EXCLUDED]
+|  |  |  |  |     +-- AndroidManifest.xml [EXCLUDED]
+|  |  |  |  |     \-- output-metadata.json [EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- processReleaseManifestForPackage [DIR EXCLUDED]
+|  |  |  |        +-- AndroidManifest.xml [EXCLUDED]
+|  |  |  |        \-- output-metadata.json [EXCLUDED]
+|  |  |  +-- packaged_res [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- packageDebugResources [DIR EXCLUDED]
+|  |  |  |  |     +-- drawable [DIR EXCLUDED]
+|  |  |  |  |     |  +-- card_background.xml [EXCLUDED]
+|  |  |  |  |     |  +-- ic_launcher_background.xml [EXCLUDED]
+|  |  |  |  |     |  +-- ic_launcher_foreground.xml [EXCLUDED]
+|  |  |  |  |     |  +-- nhen_logo.png [EXCLUDED]
+|  |  |  |  |     |  +-- qr_code.png [EXCLUDED]
+|  |  |  |  |     |  \-- transparent_bg.xml [EXCLUDED]
+|  |  |  |  |     +-- font [DIR EXCLUDED]
+|  |  |  |  |     |  +-- troublemarker.otf [EXCLUDED]
+|  |  |  |  |     |  \-- troublemarker_font.xml [EXCLUDED]
+|  |  |  |  |     +-- layout [DIR EXCLUDED]
+|  |  |  |  |     |  \-- activity_main.xml [EXCLUDED]
+|  |  |  |  |     +-- mipmap-anydpi-v26 [DIR EXCLUDED]
+|  |  |  |  |     |  +-- ic_launcher.xml [EXCLUDED]
+|  |  |  |  |     |  \-- ic_launcher_round.xml [EXCLUDED]
+|  |  |  |  |     +-- mipmap-hdpi-v4 [DIR EXCLUDED]
+|  |  |  |  |     |  +-- ic_launcher.webp [EXCLUDED]
+|  |  |  |  |     |  +-- ic_launcher_background.webp [EXCLUDED]
+|  |  |  |  |     |  +-- ic_launcher_foreground.webp [EXCLUDED]
+|  |  |  |  |     |  \-- ic_launcher_round.webp [EXCLUDED]
+|  |  |  |  |     +-- mipmap-mdpi-v4 [DIR EXCLUDED]
+|  |  |  |  |     |  +-- ic_launcher.webp [EXCLUDED]
+|  |  |  |  |     |  +-- ic_launcher_background.webp [EXCLUDED]
+|  |  |  |  |     |  +-- ic_launcher_foreground.webp [EXCLUDED]
+|  |  |  |  |     |  \-- ic_launcher_round.webp [EXCLUDED]
+|  |  |  |  |     +-- mipmap-xhdpi-v4 [DIR EXCLUDED]
+|  |  |  |  |     |  +-- ic_launcher.webp [EXCLUDED]
+|  |  |  |  |     |  +-- ic_launcher_background.webp [EXCLUDED]
+|  |  |  |  |     |  +-- ic_launcher_foreground.webp [EXCLUDED]
+|  |  |  |  |     |  \-- ic_launcher_round.webp [EXCLUDED]
+|  |  |  |  |     +-- mipmap-xxhdpi-v4 [DIR EXCLUDED]
+|  |  |  |  |     |  +-- ic_launcher.webp [EXCLUDED]
+|  |  |  |  |     |  +-- ic_launcher_background.webp [EXCLUDED]
+|  |  |  |  |     |  +-- ic_launcher_foreground.webp [EXCLUDED]
+|  |  |  |  |     |  \-- ic_launcher_round.webp [EXCLUDED]
+|  |  |  |  |     +-- mipmap-xxxhdpi-v4 [DIR EXCLUDED]
+|  |  |  |  |     |  +-- ic_launcher.webp [EXCLUDED]
+|  |  |  |  |     |  +-- ic_launcher_background.webp [EXCLUDED]
+|  |  |  |  |     |  +-- ic_launcher_foreground.webp [EXCLUDED]
+|  |  |  |  |     |  \-- ic_launcher_round.webp [EXCLUDED]
+|  |  |  |  |     +-- values [DIR EXCLUDED]
+|  |  |  |  |     |  \-- values.xml [EXCLUDED]
+|  |  |  |  |     \-- xml [DIR EXCLUDED]
+|  |  |  |  |        +-- backup_rules.xml [EXCLUDED]
+|  |  |  |  |        \-- data_extraction_rules.xml [EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- packageReleaseResources [DIR EXCLUDED]
+|  |  |  |        +-- drawable [DIR EXCLUDED]
+|  |  |  |        |  +-- card_background.xml [EXCLUDED]
+|  |  |  |        |  +-- ic_launcher_background.xml [EXCLUDED]
+|  |  |  |        |  +-- ic_launcher_foreground.xml [EXCLUDED]
+|  |  |  |        |  +-- nhen_logo.png [EXCLUDED]
+|  |  |  |        |  +-- qr_code.png [EXCLUDED]
+|  |  |  |        |  \-- transparent_bg.xml [EXCLUDED]
+|  |  |  |        +-- font [DIR EXCLUDED]
+|  |  |  |        |  +-- troublemarker.otf [EXCLUDED]
+|  |  |  |        |  \-- troublemarker_font.xml [EXCLUDED]
+|  |  |  |        +-- layout [DIR EXCLUDED]
+|  |  |  |        |  \-- activity_main.xml [EXCLUDED]
+|  |  |  |        +-- mipmap-anydpi-v26 [DIR EXCLUDED]
+|  |  |  |        |  +-- ic_launcher.xml [EXCLUDED]
+|  |  |  |        |  \-- ic_launcher_round.xml [EXCLUDED]
+|  |  |  |        +-- mipmap-hdpi-v4 [DIR EXCLUDED]
+|  |  |  |        |  +-- ic_launcher.webp [EXCLUDED]
+|  |  |  |        |  +-- ic_launcher_background.webp [EXCLUDED]
+|  |  |  |        |  +-- ic_launcher_foreground.webp [EXCLUDED]
+|  |  |  |        |  \-- ic_launcher_round.webp [EXCLUDED]
+|  |  |  |        +-- mipmap-mdpi-v4 [DIR EXCLUDED]
+|  |  |  |        |  +-- ic_launcher.webp [EXCLUDED]
+|  |  |  |        |  +-- ic_launcher_background.webp [EXCLUDED]
+|  |  |  |        |  +-- ic_launcher_foreground.webp [EXCLUDED]
+|  |  |  |        |  \-- ic_launcher_round.webp [EXCLUDED]
+|  |  |  |        +-- mipmap-xhdpi-v4 [DIR EXCLUDED]
+|  |  |  |        |  +-- ic_launcher.webp [EXCLUDED]
+|  |  |  |        |  +-- ic_launcher_background.webp [EXCLUDED]
+|  |  |  |        |  +-- ic_launcher_foreground.webp [EXCLUDED]
+|  |  |  |        |  \-- ic_launcher_round.webp [EXCLUDED]
+|  |  |  |        +-- mipmap-xxhdpi-v4 [DIR EXCLUDED]
+|  |  |  |        |  +-- ic_launcher.webp [EXCLUDED]
+|  |  |  |        |  +-- ic_launcher_background.webp [EXCLUDED]
+|  |  |  |        |  +-- ic_launcher_foreground.webp [EXCLUDED]
+|  |  |  |        |  \-- ic_launcher_round.webp [EXCLUDED]
+|  |  |  |        +-- mipmap-xxxhdpi-v4 [DIR EXCLUDED]
+|  |  |  |        |  +-- ic_launcher.webp [EXCLUDED]
+|  |  |  |        |  +-- ic_launcher_background.webp [EXCLUDED]
+|  |  |  |        |  +-- ic_launcher_foreground.webp [EXCLUDED]
+|  |  |  |        |  \-- ic_launcher_round.webp [EXCLUDED]
+|  |  |  |        +-- values [DIR EXCLUDED]
+|  |  |  |        |  \-- values.xml [EXCLUDED]
+|  |  |  |        \-- xml [DIR EXCLUDED]
+|  |  |  |           +-- backup_rules.xml [EXCLUDED]
+|  |  |  |           \-- data_extraction_rules.xml [EXCLUDED]
+|  |  |  +-- project_dex_archive [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- dexBuilderDebug [DIR EXCLUDED]
+|  |  |  |  |     \-- out [DIR EXCLUDED]
+|  |  |  |  |        +-- com [DIR EXCLUDED]
+|  |  |  |  |        |  \-- hereliesaz [DIR EXCLUDED]
+|  |  |  |  |        |     \-- nhen [DIR EXCLUDED]
+|  |  |  |  |        |        +-- ui [DIR EXCLUDED]
+|  |  |  |  |        |        |  \-- theme [DIR EXCLUDED]
+|  |  |  |  |        |        |     +-- ColorKt.dex [EXCLUDED]
+|  |  |  |  |        |        |     +-- ThemeKt.dex [EXCLUDED]
+|  |  |  |  |        |        |     \-- TypeKt.dex [EXCLUDED]
+|  |  |  |  |        |        +-- BlurTileService.dex [EXCLUDED]
+|  |  |  |  |        |        \-- MainActivity.dex [EXCLUDED]
+|  |  |  |  |        +-- bde4b2125acf6e851c6bf215642d63b6f99faa7955ebd5479a797efbf72b6a4a_0.jar [EXCLUDED]
+|  |  |  |  |        +-- bde4b2125acf6e851c6bf215642d63b6f99faa7955ebd5479a797efbf72b6a4a_1.jar [EXCLUDED]
+|  |  |  |  |        +-- bde4b2125acf6e851c6bf215642d63b6f99faa7955ebd5479a797efbf72b6a4a_2.jar [EXCLUDED]
+|  |  |  |  |        \-- bde4b2125acf6e851c6bf215642d63b6f99faa7955ebd5479a797efbf72b6a4a_3.jar [EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- dexBuilderRelease [DIR EXCLUDED]
+|  |  |  |        \-- out [DIR EXCLUDED]
+|  |  |  |           +-- com [DIR EXCLUDED]
+|  |  |  |           |  \-- hereliesaz [DIR EXCLUDED]
+|  |  |  |           |     \-- nhen [DIR EXCLUDED]
+|  |  |  |           |        +-- ui [DIR EXCLUDED]
+|  |  |  |           |        |  \-- theme [DIR EXCLUDED]
+|  |  |  |           |        |     +-- ColorKt.dex [EXCLUDED]
+|  |  |  |           |        |     +-- ThemeKt.dex [EXCLUDED]
+|  |  |  |           |        |     \-- TypeKt.dex [EXCLUDED]
+|  |  |  |           |        +-- BlurTileService.dex [EXCLUDED]
+|  |  |  |           |        \-- MainActivity.dex [EXCLUDED]
+|  |  |  |           +-- 21d972e3f8c51d9e1829e5d658a7fce7a79c06620427a9e37c90324d13362b1f_0.jar [EXCLUDED]
+|  |  |  |           +-- 21d972e3f8c51d9e1829e5d658a7fce7a79c06620427a9e37c90324d13362b1f_1.jar [EXCLUDED]
+|  |  |  |           +-- 21d972e3f8c51d9e1829e5d658a7fce7a79c06620427a9e37c90324d13362b1f_2.jar [EXCLUDED]
+|  |  |  |           \-- 21d972e3f8c51d9e1829e5d658a7fce7a79c06620427a9e37c90324d13362b1f_3.jar [EXCLUDED]
+|  |  |  +-- runtime_symbol_list [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- processDebugResources [DIR EXCLUDED]
+|  |  |  |  |     \-- R.txt [EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- processReleaseResources [DIR EXCLUDED]
+|  |  |  |        \-- R.txt [EXCLUDED]
+|  |  |  +-- sdk_dependency_data [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- sdkReleaseDependencyData [DIR EXCLUDED]
+|  |  |  |        \-- sdkDependencyData.pb [EXCLUDED]
+|  |  |  +-- signing_config_versions [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- writeDebugSigningConfigVersions [DIR EXCLUDED]
+|  |  |  |  |     \-- signing-config-versions.json [EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- writeReleaseSigningConfigVersions [DIR EXCLUDED]
+|  |  |  |        \-- signing-config-versions.json [EXCLUDED]
+|  |  |  +-- source_set_path_map [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- mapDebugSourceSetPaths [DIR EXCLUDED]
+|  |  |  |  |     \-- file-map.txt [EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- mapReleaseSourceSetPaths [DIR EXCLUDED]
+|  |  |  |        \-- file-map.txt [EXCLUDED]
+|  |  |  +-- stable_resource_ids_file [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- processDebugResources [DIR EXCLUDED]
+|  |  |  |  |     \-- stableIds.txt [EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- processReleaseResources [DIR EXCLUDED]
+|  |  |  |        \-- stableIds.txt [EXCLUDED]
+|  |  |  +-- stripped_native_libs [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- stripDebugDebugSymbols [DIR EXCLUDED]
+|  |  |  |  |     \-- out [DIR EXCLUDED]
+|  |  |  |  |        \-- lib [DIR EXCLUDED]
+|  |  |  |  |           +-- arm64-v8a [DIR EXCLUDED]
+|  |  |  |  |           |  \-- libandroidx.graphics.path.so [EXCLUDED]
+|  |  |  |  |           +-- armeabi-v7a [DIR EXCLUDED]
+|  |  |  |  |           |  \-- libandroidx.graphics.path.so [EXCLUDED]
+|  |  |  |  |           +-- x86 [DIR EXCLUDED]
+|  |  |  |  |           |  \-- libandroidx.graphics.path.so [EXCLUDED]
+|  |  |  |  |           \-- x86_64 [DIR EXCLUDED]
+|  |  |  |  |              \-- libandroidx.graphics.path.so [EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- stripReleaseDebugSymbols [DIR EXCLUDED]
+|  |  |  |        \-- out [DIR EXCLUDED]
+|  |  |  |           \-- lib [DIR EXCLUDED]
+|  |  |  |              +-- arm64-v8a [DIR EXCLUDED]
+|  |  |  |              |  \-- libandroidx.graphics.path.so [EXCLUDED]
+|  |  |  |              +-- armeabi-v7a [DIR EXCLUDED]
+|  |  |  |              |  \-- libandroidx.graphics.path.so [EXCLUDED]
+|  |  |  |              +-- x86 [DIR EXCLUDED]
+|  |  |  |              |  \-- libandroidx.graphics.path.so [EXCLUDED]
+|  |  |  |              \-- x86_64 [DIR EXCLUDED]
+|  |  |  |                 \-- libandroidx.graphics.path.so [EXCLUDED]
+|  |  |  +-- sub_project_dex_archive [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- dexBuilderDebug [DIR EXCLUDED]
+|  |  |  |  |     \-- out [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- dexBuilderRelease [DIR EXCLUDED]
+|  |  |  |        \-- out [DIR EXCLUDED]
+|  |  |  +-- symbol_list_with_package_name [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- processDebugResources [DIR EXCLUDED]
+|  |  |  |  |     \-- package-aware-r.txt [EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- processReleaseResources [DIR EXCLUDED]
+|  |  |  |        \-- package-aware-r.txt [EXCLUDED]
+|  |  |  +-- validate_signing_config [DIR EXCLUDED]
+|  |  |  |  +-- debug [DIR EXCLUDED]
+|  |  |  |  |  \-- validateSigningDebug [DIR EXCLUDED]
+|  |  |  |  \-- release [DIR EXCLUDED]
+|  |  |  |     \-- validateSigningRelease [DIR EXCLUDED]
+|  |  |  \-- version_control_info_file [DIR EXCLUDED]
+|  |  |     \-- release [DIR EXCLUDED]
+|  |  |        \-- extractReleaseVersionControlInfo [DIR EXCLUDED]
+|  |  |           \-- version-control-info.textproto [EXCLUDED]
+|  |  +-- kotlin [DIR EXCLUDED]
+|  |  |  +-- compileDebugKotlin [DIR EXCLUDED]
+|  |  |  |  +-- cacheable [DIR EXCLUDED]
+|  |  |  |  |  +-- caches-jvm [DIR EXCLUDED]
+|  |  |  |  |  |  +-- inputs [DIR EXCLUDED]
+|  |  |  |  |  |  |  +-- source-to-output.tab [EXCLUDED]
+|  |  |  |  |  |  |  +-- source-to-output.tab.keystream [EXCLUDED]
+|  |  |  |  |  |  |  +-- source-to-output.tab.keystream.len [EXCLUDED]
+|  |  |  |  |  |  |  +-- source-to-output.tab.len [EXCLUDED]
+|  |  |  |  |  |  |  +-- source-to-output.tab.values.at [EXCLUDED]
+|  |  |  |  |  |  |  +-- source-to-output.tab_i [EXCLUDED]
+|  |  |  |  |  |  |  \-- source-to-output.tab_i.len [EXCLUDED]
+|  |  |  |  |  |  +-- jvm [DIR EXCLUDED]
+|  |  |  |  |  |  |  \-- kotlin [DIR EXCLUDED]
+|  |  |  |  |  |  |     +-- class-attributes.tab [EXCLUDED]
+|  |  |  |  |  |  |     +-- class-attributes.tab.keystream [EXCLUDED]
+|  |  |  |  |  |  |     +-- class-attributes.tab.keystream.len [EXCLUDED]
+|  |  |  |  |  |  |     +-- class-attributes.tab.len [EXCLUDED]
+|  |  |  |  |  |  |     +-- class-attributes.tab.values.at [EXCLUDED]
+|  |  |  |  |  |  |     +-- class-attributes.tab_i [EXCLUDED]
+|  |  |  |  |  |  |     +-- class-attributes.tab_i.len [EXCLUDED]
+|  |  |  |  |  |  |     +-- class-fq-name-to-source.tab [EXCLUDED]
+|  |  |  |  |  |  |     +-- class-fq-name-to-source.tab.keystream [EXCLUDED]
+|  |  |  |  |  |  |     +-- class-fq-name-to-source.tab.keystream.len [EXCLUDED]
+|  |  |  |  |  |  |     +-- class-fq-name-to-source.tab.len [EXCLUDED]
+|  |  |  |  |  |  |     +-- class-fq-name-to-source.tab.values.at [EXCLUDED]
+|  |  |  |  |  |  |     +-- class-fq-name-to-source.tab_i [EXCLUDED]
+|  |  |  |  |  |  |     +-- class-fq-name-to-source.tab_i.len [EXCLUDED]
+|  |  |  |  |  |  |     +-- internal-name-to-source.tab [EXCLUDED]
+|  |  |  |  |  |  |     +-- internal-name-to-source.tab.keystream [EXCLUDED]
+|  |  |  |  |  |  |     +-- internal-name-to-source.tab.keystream.len [EXCLUDED]
+|  |  |  |  |  |  |     +-- internal-name-to-source.tab.len [EXCLUDED]
+|  |  |  |  |  |  |     +-- internal-name-to-source.tab.values.at [EXCLUDED]
+|  |  |  |  |  |  |     +-- internal-name-to-source.tab_i [EXCLUDED]
+|  |  |  |  |  |  |     +-- internal-name-to-source.tab_i.len [EXCLUDED]
+|  |  |  |  |  |  |     +-- package-parts.tab [EXCLUDED]
+|  |  |  |  |  |  |     +-- package-parts.tab.keystream [EXCLUDED]
+|  |  |  |  |  |  |     +-- package-parts.tab.keystream.len [EXCLUDED]
+|  |  |  |  |  |  |     +-- package-parts.tab.len [EXCLUDED]
+|  |  |  |  |  |  |     +-- package-parts.tab.values.at [EXCLUDED]
+|  |  |  |  |  |  |     +-- package-parts.tab_i [EXCLUDED]
+|  |  |  |  |  |  |     +-- package-parts.tab_i.len [EXCLUDED]
+|  |  |  |  |  |  |     +-- proto.tab [EXCLUDED]
+|  |  |  |  |  |  |     +-- proto.tab.keystream [EXCLUDED]
+|  |  |  |  |  |  |     +-- proto.tab.keystream.len [EXCLUDED]
+|  |  |  |  |  |  |     +-- proto.tab.len [EXCLUDED]
+|  |  |  |  |  |  |     +-- proto.tab.values.at [EXCLUDED]
+|  |  |  |  |  |  |     +-- proto.tab_i [EXCLUDED]
+|  |  |  |  |  |  |     +-- proto.tab_i.len [EXCLUDED]
+|  |  |  |  |  |  |     +-- source-to-classes.tab [EXCLUDED]
+|  |  |  |  |  |  |     +-- source-to-classes.tab.keystream [EXCLUDED]
+|  |  |  |  |  |  |     +-- source-to-classes.tab.keystream.len [EXCLUDED]
+|  |  |  |  |  |  |     +-- source-to-classes.tab.len [EXCLUDED]
+|  |  |  |  |  |  |     +-- source-to-classes.tab.values.at [EXCLUDED]
+|  |  |  |  |  |  |     +-- source-to-classes.tab_i [EXCLUDED]
+|  |  |  |  |  |  |     +-- source-to-classes.tab_i.len [EXCLUDED]
+|  |  |  |  |  |  |     +-- subtypes.tab [EXCLUDED]
+|  |  |  |  |  |  |     +-- subtypes.tab.keystream [EXCLUDED]
+|  |  |  |  |  |  |     +-- subtypes.tab.keystream.len [EXCLUDED]
+|  |  |  |  |  |  |     +-- subtypes.tab.len [EXCLUDED]
+|  |  |  |  |  |  |     +-- subtypes.tab.values.at [EXCLUDED]
+|  |  |  |  |  |  |     +-- subtypes.tab_i [EXCLUDED]
+|  |  |  |  |  |  |     +-- subtypes.tab_i.len [EXCLUDED]
+|  |  |  |  |  |  |     +-- supertypes.tab [EXCLUDED]
+|  |  |  |  |  |  |     +-- supertypes.tab.keystream [EXCLUDED]
+|  |  |  |  |  |  |     +-- supertypes.tab.keystream.len [EXCLUDED]
+|  |  |  |  |  |  |     +-- supertypes.tab.len [EXCLUDED]
+|  |  |  |  |  |  |     +-- supertypes.tab.values.at [EXCLUDED]
+|  |  |  |  |  |  |     +-- supertypes.tab_i [EXCLUDED]
+|  |  |  |  |  |  |     \-- supertypes.tab_i.len [EXCLUDED]
+|  |  |  |  |  |  \-- lookups [DIR EXCLUDED]
+|  |  |  |  |  |     +-- counters.tab [EXCLUDED]
+|  |  |  |  |  |     +-- file-to-id.tab [EXCLUDED]
+|  |  |  |  |  |     +-- file-to-id.tab.keystream [EXCLUDED]
+|  |  |  |  |  |     +-- file-to-id.tab.keystream.len [EXCLUDED]
+|  |  |  |  |  |     +-- file-to-id.tab.len [EXCLUDED]
+|  |  |  |  |  |     +-- file-to-id.tab.values.at [EXCLUDED]
+|  |  |  |  |  |     +-- file-to-id.tab_i [EXCLUDED]
+|  |  |  |  |  |     +-- file-to-id.tab_i.len [EXCLUDED]
+|  |  |  |  |  |     +-- id-to-file.tab [EXCLUDED]
+|  |  |  |  |  |     +-- id-to-file.tab.keystream [EXCLUDED]
+|  |  |  |  |  |     +-- id-to-file.tab.keystream.len [EXCLUDED]
+|  |  |  |  |  |     +-- id-to-file.tab.len [EXCLUDED]
+|  |  |  |  |  |     +-- id-to-file.tab.values.at [EXCLUDED]
+|  |  |  |  |  |     +-- id-to-file.tab_i [EXCLUDED]
+|  |  |  |  |  |     +-- id-to-file.tab_i.len [EXCLUDED]
+|  |  |  |  |  |     +-- lookups.tab [EXCLUDED]
+|  |  |  |  |  |     +-- lookups.tab.keystream [EXCLUDED]
+|  |  |  |  |  |     +-- lookups.tab.keystream.len [EXCLUDED]
+|  |  |  |  |  |     +-- lookups.tab.len [EXCLUDED]
+|  |  |  |  |  |     +-- lookups.tab.values.at [EXCLUDED]
+|  |  |  |  |  |     +-- lookups.tab_i [EXCLUDED]
+|  |  |  |  |  |     \-- lookups.tab_i.len [EXCLUDED]
+|  |  |  |  |  \-- last-build.bin [EXCLUDED]
+|  |  |  |  +-- classpath-snapshot [DIR EXCLUDED]
+|  |  |  |  |  \-- shrunk-classpath-snapshot.bin [EXCLUDED]
+|  |  |  |  \-- local-state [DIR EXCLUDED]
+|  |  |  \-- compileReleaseKotlin [DIR EXCLUDED]
+|  |  |     +-- cacheable [DIR EXCLUDED]
+|  |  |     |  +-- caches-jvm [DIR EXCLUDED]
+|  |  |     |  |  +-- inputs [DIR EXCLUDED]
+|  |  |     |  |  |  +-- source-to-output.tab [EXCLUDED]
+|  |  |     |  |  |  +-- source-to-output.tab.keystream [EXCLUDED]
+|  |  |     |  |  |  +-- source-to-output.tab.keystream.len [EXCLUDED]
+|  |  |     |  |  |  +-- source-to-output.tab.len [EXCLUDED]
+|  |  |     |  |  |  +-- source-to-output.tab.values.at [EXCLUDED]
+|  |  |     |  |  |  +-- source-to-output.tab_i [EXCLUDED]
+|  |  |     |  |  |  \-- source-to-output.tab_i.len [EXCLUDED]
+|  |  |     |  |  +-- jvm [DIR EXCLUDED]
+|  |  |     |  |  |  \-- kotlin [DIR EXCLUDED]
+|  |  |     |  |  |     +-- class-attributes.tab [EXCLUDED]
+|  |  |     |  |  |     +-- class-attributes.tab.keystream [EXCLUDED]
+|  |  |     |  |  |     +-- class-attributes.tab.keystream.len [EXCLUDED]
+|  |  |     |  |  |     +-- class-attributes.tab.len [EXCLUDED]
+|  |  |     |  |  |     +-- class-attributes.tab.values.at [EXCLUDED]
+|  |  |     |  |  |     +-- class-attributes.tab_i [EXCLUDED]
+|  |  |     |  |  |     +-- class-attributes.tab_i.len [EXCLUDED]
+|  |  |     |  |  |     +-- class-fq-name-to-source.tab [EXCLUDED]
+|  |  |     |  |  |     +-- class-fq-name-to-source.tab.keystream [EXCLUDED]
+|  |  |     |  |  |     +-- class-fq-name-to-source.tab.keystream.len [EXCLUDED]
+|  |  |     |  |  |     +-- class-fq-name-to-source.tab.len [EXCLUDED]
+|  |  |     |  |  |     +-- class-fq-name-to-source.tab.values.at [EXCLUDED]
+|  |  |     |  |  |     +-- class-fq-name-to-source.tab_i [EXCLUDED]
+|  |  |     |  |  |     +-- class-fq-name-to-source.tab_i.len [EXCLUDED]
+|  |  |     |  |  |     +-- internal-name-to-source.tab [EXCLUDED]
+|  |  |     |  |  |     +-- internal-name-to-source.tab.keystream [EXCLUDED]
+|  |  |     |  |  |     +-- internal-name-to-source.tab.keystream.len [EXCLUDED]
+|  |  |     |  |  |     +-- internal-name-to-source.tab.len [EXCLUDED]
+|  |  |     |  |  |     +-- internal-name-to-source.tab.values.at [EXCLUDED]
+|  |  |     |  |  |     +-- internal-name-to-source.tab_i [EXCLUDED]
+|  |  |     |  |  |     +-- internal-name-to-source.tab_i.len [EXCLUDED]
+|  |  |     |  |  |     +-- package-parts.tab [EXCLUDED]
+|  |  |     |  |  |     +-- package-parts.tab.keystream [EXCLUDED]
+|  |  |     |  |  |     +-- package-parts.tab.keystream.len [EXCLUDED]
+|  |  |     |  |  |     +-- package-parts.tab.len [EXCLUDED]
+|  |  |     |  |  |     +-- package-parts.tab.values.at [EXCLUDED]
+|  |  |     |  |  |     +-- package-parts.tab_i [EXCLUDED]
+|  |  |     |  |  |     +-- package-parts.tab_i.len [EXCLUDED]
+|  |  |     |  |  |     +-- proto.tab [EXCLUDED]
+|  |  |     |  |  |     +-- proto.tab.keystream [EXCLUDED]
+|  |  |     |  |  |     +-- proto.tab.keystream.len [EXCLUDED]
+|  |  |     |  |  |     +-- proto.tab.len [EXCLUDED]
+|  |  |     |  |  |     +-- proto.tab.values.at [EXCLUDED]
+|  |  |     |  |  |     +-- proto.tab_i [EXCLUDED]
+|  |  |     |  |  |     +-- proto.tab_i.len [EXCLUDED]
+|  |  |     |  |  |     +-- source-to-classes.tab [EXCLUDED]
+|  |  |     |  |  |     +-- source-to-classes.tab.keystream [EXCLUDED]
+|  |  |     |  |  |     +-- source-to-classes.tab.keystream.len [EXCLUDED]
+|  |  |     |  |  |     +-- source-to-classes.tab.len [EXCLUDED]
+|  |  |     |  |  |     +-- source-to-classes.tab.values.at [EXCLUDED]
+|  |  |     |  |  |     +-- source-to-classes.tab_i [EXCLUDED]
+|  |  |     |  |  |     +-- source-to-classes.tab_i.len [EXCLUDED]
+|  |  |     |  |  |     +-- subtypes.tab [EXCLUDED]
+|  |  |     |  |  |     +-- subtypes.tab.keystream [EXCLUDED]
+|  |  |     |  |  |     +-- subtypes.tab.keystream.len [EXCLUDED]
+|  |  |     |  |  |     +-- subtypes.tab.len [EXCLUDED]
+|  |  |     |  |  |     +-- subtypes.tab.values.at [EXCLUDED]
+|  |  |     |  |  |     +-- subtypes.tab_i [EXCLUDED]
+|  |  |     |  |  |     +-- subtypes.tab_i.len [EXCLUDED]
+|  |  |     |  |  |     +-- supertypes.tab [EXCLUDED]
+|  |  |     |  |  |     +-- supertypes.tab.keystream [EXCLUDED]
+|  |  |     |  |  |     +-- supertypes.tab.keystream.len [EXCLUDED]
+|  |  |     |  |  |     +-- supertypes.tab.len [EXCLUDED]
+|  |  |     |  |  |     +-- supertypes.tab.values.at [EXCLUDED]
+|  |  |     |  |  |     +-- supertypes.tab_i [EXCLUDED]
+|  |  |     |  |  |     \-- supertypes.tab_i.len [EXCLUDED]
+|  |  |     |  |  \-- lookups [DIR EXCLUDED]
+|  |  |     |  |     +-- counters.tab [EXCLUDED]
+|  |  |     |  |     +-- file-to-id.tab [EXCLUDED]
+|  |  |     |  |     +-- file-to-id.tab.keystream [EXCLUDED]
+|  |  |     |  |     +-- file-to-id.tab.keystream.len [EXCLUDED]
+|  |  |     |  |     +-- file-to-id.tab.len [EXCLUDED]
+|  |  |     |  |     +-- file-to-id.tab.values.at [EXCLUDED]
+|  |  |     |  |     +-- file-to-id.tab_i [EXCLUDED]
+|  |  |     |  |     +-- file-to-id.tab_i.len [EXCLUDED]
+|  |  |     |  |     +-- id-to-file.tab [EXCLUDED]
+|  |  |     |  |     +-- id-to-file.tab.keystream [EXCLUDED]
+|  |  |     |  |     +-- id-to-file.tab.keystream.len [EXCLUDED]
+|  |  |     |  |     +-- id-to-file.tab.len [EXCLUDED]
+|  |  |     |  |     +-- id-to-file.tab.values.at [EXCLUDED]
+|  |  |     |  |     +-- id-to-file.tab_i [EXCLUDED]
+|  |  |     |  |     +-- id-to-file.tab_i.len [EXCLUDED]
+|  |  |     |  |     +-- lookups.tab [EXCLUDED]
+|  |  |     |  |     +-- lookups.tab.keystream [EXCLUDED]
+|  |  |     |  |     +-- lookups.tab.keystream.len [EXCLUDED]
+|  |  |     |  |     +-- lookups.tab.len [EXCLUDED]
+|  |  |     |  |     +-- lookups.tab.values.at [EXCLUDED]
+|  |  |     |  |     +-- lookups.tab_i [EXCLUDED]
+|  |  |     |  |     \-- lookups.tab_i.len [EXCLUDED]
+|  |  |     |  \-- last-build.bin [EXCLUDED]
+|  |  |     +-- classpath-snapshot [DIR EXCLUDED]
+|  |  |     |  \-- shrunk-classpath-snapshot.bin [EXCLUDED]
+|  |  |     \-- local-state [DIR EXCLUDED]
+|  |  +-- kotlinToolingMetadata [DIR EXCLUDED]
+|  |  |  \-- kotlin-tooling-metadata.json [EXCLUDED]
+|  |  +-- outputs [DIR EXCLUDED]
+|  |  |  +-- logs [DIR EXCLUDED]
+|  |  |  |  +-- manifest-merger-debug-report.txt [EXCLUDED]
+|  |  |  |  \-- manifest-merger-release-report.txt [EXCLUDED]
+|  |  |  \-- sdk-dependencies [DIR EXCLUDED]
+|  |  |     \-- release [DIR EXCLUDED]
+|  |  |        \-- sdkDependencies.txt [EXCLUDED]
+|  |  \-- tmp [DIR EXCLUDED]
+|  |     \-- kotlin-classes [DIR EXCLUDED]
+|  |        +-- debug [DIR EXCLUDED]
+|  |        |  +-- com [DIR EXCLUDED]
+|  |        |  |  \-- hereliesaz [DIR EXCLUDED]
+|  |        |  |     \-- nhen [DIR EXCLUDED]
+|  |        |  |        +-- ui [DIR EXCLUDED]
+|  |        |  |        |  \-- theme [DIR EXCLUDED]
+|  |        |  |        |     +-- ColorKt.class [EXCLUDED]
+|  |        |  |        |     +-- ThemeKt.class [EXCLUDED]
+|  |        |  |        |     \-- TypeKt.class [EXCLUDED]
+|  |        |  |        +-- BlurTileService.class [EXCLUDED]
+|  |        |  |        \-- MainActivity.class [EXCLUDED]
+|  |        |  \-- META-INF [DIR EXCLUDED]
+|  |        |     \-- app_debug.kotlin_module [EXCLUDED]
+|  |        \-- release [DIR EXCLUDED]
+|  |           +-- com [DIR EXCLUDED]
+|  |           |  \-- hereliesaz [DIR EXCLUDED]
+|  |           |     \-- nhen [DIR EXCLUDED]
+|  |           |        +-- ui [DIR EXCLUDED]
+|  |           |        |  \-- theme [DIR EXCLUDED]
+|  |           |        |     +-- ColorKt.class [EXCLUDED]
+|  |           |        |     +-- ThemeKt.class [EXCLUDED]
+|  |           |        |     \-- TypeKt.class [EXCLUDED]
+|  |           |        +-- BlurTileService.class [EXCLUDED]
+|  |           |        \-- MainActivity.class [EXCLUDED]
+|  |           \-- META-INF [DIR EXCLUDED]
+|  |              \-- app_release.kotlin_module [EXCLUDED]
+|  +-- release
+|  |  +-- baselineProfiles [DIR EXCLUDED]
+|  |  |  +-- 0 [DIR EXCLUDED]
+|  |  |  |  \-- app-release.dm [EXCLUDED]
+|  |  |  \-- 1 [DIR EXCLUDED]
+|  |  |     \-- app-release.dm [EXCLUDED]
+|  |  +-- nhen-1-release.apk [EXCLUDED]
+|  |  \-- output-metadata.json [EXCLUDED]
+|  +-- src
+|  |  +-- androidTest
+|  |  |  \-- java
+|  |  |     \-- com
+|  |  |        \-- hereliesaz
+|  |  |           \-- nhen
+|  |  |              \-- ExampleInstrumentedTest.kt [INCLUDED]
+|  |  +-- main
+|  |  |  +-- java
+|  |  |  |  \-- com
+|  |  |  |     \-- hereliesaz
+|  |  |  |        \-- nhen
+|  |  |  |           +-- ui
+|  |  |  |           |  \-- theme
+|  |  |  |           |     +-- Color.kt [INCLUDED]
+|  |  |  |           |     +-- Theme.kt [INCLUDED]
+|  |  |  |           |     \-- Type.kt [INCLUDED]
+|  |  |  |           +-- BlurTileService.kt [INCLUDED]
+|  |  |  |           \-- MainActivity.kt [INCLUDED]
+|  |  |  +-- res
+|  |  |  |  +-- drawable
+|  |  |  |  |  +-- card_background.xml [INCLUDED]
+|  |  |  |  |  +-- ic_launcher_background.xml [INCLUDED]
+|  |  |  |  |  +-- ic_launcher_foreground.xml [INCLUDED]
+|  |  |  |  |  +-- nhen_logo.png [ASSET]
+|  |  |  |  |  +-- qr_code.png [ASSET]
+|  |  |  |  |  \-- transparent_bg.xml [INCLUDED]
+|  |  |  |  +-- font
+|  |  |  |  |  +-- troublemarker.otf [ASSET]
+|  |  |  |  |  \-- troublemarker_font.xml [INCLUDED]
+|  |  |  |  +-- layout
+|  |  |  |  |  \-- activity_main.xml [INCLUDED]
+|  |  |  |  +-- mipmap-anydpi
+|  |  |  |  +-- mipmap-anydpi-v26
+|  |  |  |  |  +-- ic_launcher.xml [INCLUDED]
+|  |  |  |  |  \-- ic_launcher_round.xml [INCLUDED]
+|  |  |  |  +-- mipmap-hdpi
+|  |  |  |  |  +-- ic_launcher.webp [ASSET]
+|  |  |  |  |  +-- ic_launcher_background.webp [ASSET]
+|  |  |  |  |  +-- ic_launcher_foreground.webp [ASSET]
+|  |  |  |  |  \-- ic_launcher_round.webp [ASSET]
+|  |  |  |  +-- mipmap-mdpi
+|  |  |  |  |  +-- ic_launcher.webp [ASSET]
+|  |  |  |  |  +-- ic_launcher_background.webp [ASSET]
+|  |  |  |  |  +-- ic_launcher_foreground.webp [ASSET]
+|  |  |  |  |  \-- ic_launcher_round.webp [ASSET]
+|  |  |  |  +-- mipmap-xhdpi
+|  |  |  |  |  +-- ic_launcher.webp [ASSET]
+|  |  |  |  |  +-- ic_launcher_background.webp [ASSET]
+|  |  |  |  |  +-- ic_launcher_foreground.webp [ASSET]
+|  |  |  |  |  \-- ic_launcher_round.webp [ASSET]
+|  |  |  |  +-- mipmap-xxhdpi
+|  |  |  |  |  +-- ic_launcher.webp [ASSET]
+|  |  |  |  |  +-- ic_launcher_background.webp [ASSET]
+|  |  |  |  |  +-- ic_launcher_foreground.webp [ASSET]
+|  |  |  |  |  \-- ic_launcher_round.webp [ASSET]
+|  |  |  |  +-- mipmap-xxxhdpi
+|  |  |  |  |  +-- ic_launcher.webp [ASSET]
+|  |  |  |  |  +-- ic_launcher_background.webp [ASSET]
+|  |  |  |  |  +-- ic_launcher_foreground.webp [ASSET]
+|  |  |  |  |  \-- ic_launcher_round.webp [ASSET]
+|  |  |  |  +-- values
+|  |  |  |  |  +-- bools.xml [INCLUDED]
+|  |  |  |  |  +-- colors.xml [INCLUDED]
+|  |  |  |  |  +-- strings.xml [INCLUDED]
+|  |  |  |  |  +-- styles.xml [INCLUDED]
+|  |  |  |  |  \-- themes.xml [INCLUDED]
+|  |  |  |  +-- values-night
+|  |  |  |  +-- values-night-v31
+|  |  |  |  \-- xml
+|  |  |  |     +-- backup_rules.xml [INCLUDED]
+|  |  |  |     \-- data_extraction_rules.xml [INCLUDED]
+|  |  |  +-- AndroidManifest.xml [INCLUDED]
+|  |  |  \-- ic_launcher-playstore.png [ASSET]
+|  |  \-- test
+|  |     \-- java
+|  |        \-- com
+|  |           \-- hereliesaz
+|  |              \-- nhen
+|  |                 \-- ExampleUnitTest.kt [INCLUDED]
+|  +-- .gitignore [INCLUDED]
+|  +-- build.gradle.kts
+|  \-- proguard-rules.pro [INCLUDED]
++-- gradle
+|  +-- wrapper
+|  |  +-- gradle-wrapper.jar
+|  |  \-- gradle-wrapper.properties
+|  \-- libs.versions.toml
++-- .gitignore
++-- backup_for_ai.ps1
++-- build.gradle.kts
++-- gradle.properties
++-- gradlew
++-- gradlew.bat
++-- local.properties
++-- project_context_for_ai_20250628_134402.txt
+\-- settings.gradle.kts
+
+
+
+--- INCLUDED FILE CONTENTS (from selected modules) ---
+
+Each file begins with a '--- FILE: [relative_path] ---' header.
+
+
+
+--- FILE: app/.gitignore ---
+
+/build
+
+
+--- FILE: app/proguard-rules.pro ---
+
+# Add project specific ProGuard rules here.
+# You can control the set of applied configuration files using the
+# proguardFiles setting in build.gradle.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+# Uncomment this to preserve the line number information for
+# debugging stack traces.
+#-keepattributes SourceFile,LineNumberTable
+
+# If you keep the line number information, uncomment this to
+# hide the original source file name.
+#-renamesourcefileattribute SourceFile
+
+
+--- FILE: app/src/androidTest/java/com/hereliesaz/nhen/ExampleInstrumentedTest.kt ---
+
+package com.hereliesaz.nhen
+
+  import androidx.test.platform.app.InstrumentationRegistry
+  import androidx.test.ext.junit.runners.AndroidJUnit4
+
+  import org.junit.Test
+  import org.junit.runner.RunWith
+
+  import org.junit.Assert.*
+
+  /**
+   * Instrumented test, which will execute on an Android device.
+   *
+   * See [testing documentation](http://d.android.com/tools/testing).
+   */
+  @RunWith(AndroidJUnit4::class)
+  class ExampleInstrumentedTest {
+    @Test
+    fun useAppContext() {
+      // Context of the app under test.
+      val appContext = InstrumentationRegistry.getInstrumentation().targetContext
+      assertEquals("com.hereliesaz.nhen", appContext.packageName)
+    }
+  }
+
+
+--- FILE: app/src/main/AndroidManifest.xml ---
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hereliesaz.nhen">
+
+    <application
+        android:allowBackup="true"
+        android:label="nHen"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Nhen.Transparent" >
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.Nhen.Transparent"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
+
+
+
+--- FILE: app/src/main/java/com/hereliesaz/nhen/BlurTileService.kt ---
+
+package com.hereliesaz.nhen
+
+import android.content.Intent
+import android.service.quicksettings.TileService
+
+class BlurTileService : TileService() {
+    override fun onClick() {
+        qsTile?.updateTile()
+        startActivityAndCollapse(Intent(this, MainActivity::class.java).apply {
+            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+        })
+    }
+}
+
+
+--- FILE: app/src/main/java/com/hereliesaz/nhen/MainActivity.kt ---
+
+package com.hereliesaz.nhen
+
+import android.os.Build
+import android.os.Bundle
+import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.res.ResourcesCompat
+import android.util.TypedValue
+
+class MainActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        // Set background blur radius if API level allows
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            window.setBackgroundBlurRadius(50) // Blur background behind the window
+        }
+
+        val imageView = findViewById<ImageView>(R.id.imageView)
+        val phoneText = findViewById<TextView>(R.id.phoneText)
+        val nhEnText = findViewById<TextView>(R.id.nhEnText)
+
+        val width = resources.displayMetrics.widthPixels
+        imageView.layoutParams.width = (width * 0.75).toInt()
+        imageView.layoutParams.height = ViewGroup.LayoutParams.WRAP_CONTENT
+        imageView.requestLayout()
+
+        imageView.setImageResource(R.drawable.qr_code)
+
+        val troublemakerFont = ResourcesCompat.getFont(this, R.font.troublemarker_font)
+
+        phoneText.apply {
+            text = getString(R.string.phone)
+            typeface = troublemakerFont
+            setTextSize(TypedValue.COMPLEX_UNIT_SP, 30f)
+        }
+
+        nhEnText.apply {
+            text = getString(R.string.nh_en)
+            typeface = troublemakerFont
+            setTextSize(TypedValue.COMPLEX_UNIT_SP, 60f)
+        }
+    }
+}
+
+
+
+--- FILE: app/src/main/java/com/hereliesaz/nhen/ui/theme/Color.kt ---
+
+package com.hereliesaz.nhen.ui.theme
+
+import androidx.compose.ui.graphics.Color
+
+val Purple80 = Color(0xFFD0BCFF)
+val PurpleGrey80 = Color(0xFFCCC2DC)
+val Pink80 = Color(0xFFEFB8C8)
+
+val Purple40 = Color(0xFF6650a4)
+val PurpleGrey40 = Color(0xFF625b71)
+val Pink40 = Color(0xFF7D5260)
+
+
+--- FILE: app/src/main/java/com/hereliesaz/nhen/ui/theme/Theme.kt ---
+
+package com.hereliesaz.nhen.ui.theme
+
+import android.app.Activity
+import android.os.Build
+import androidx.compose.foundation.isSystemInDarkTheme
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.darkColorScheme
+import androidx.compose.material3.dynamicDarkColorScheme
+import androidx.compose.material3.dynamicLightColorScheme
+import androidx.compose.material3.lightColorScheme
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.platform.LocalContext
+
+private val DarkColorScheme = darkColorScheme(
+    primary = Purple80,
+    secondary = PurpleGrey80,
+    tertiary = Pink80
+)
+
+private val LightColorScheme = lightColorScheme(
+    primary = Purple40,
+    secondary = PurpleGrey40,
+    tertiary = Pink40
+
+    /* Other default colors to override
+    background = Color(0xFFFFFBFE),
+    surface = Color(0xFFFFFBFE),
+    onPrimary = Color.White,
+    onSecondary = Color.White,
+    onTertiary = Color.White,
+    onBackground = Color(0xFF1C1B1F),
+    onSurface = Color(0xFF1C1B1F),
+    */
+)
+
+@Composable
+fun NhenTheme(
+    darkTheme: Boolean = isSystemInDarkTheme(),
+    // Dynamic color is available on Android 12+
+    dynamicColor: Boolean = true,
+    content: @Composable () -> Unit
+) {
+    val colorScheme = when {
+      dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
+        val context = LocalContext.current
+        if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
+      }
+      darkTheme -> DarkColorScheme
+      else -> LightColorScheme
+    }
+
+    MaterialTheme(
+      colorScheme = colorScheme,
+      typography = Typography,
+      content = content
+    )
+}
+
+
+--- FILE: app/src/main/java/com/hereliesaz/nhen/ui/theme/Type.kt ---
+
+package com.hereliesaz.nhen.ui.theme
+
+import androidx.compose.material3.Typography
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.sp
+
+// Set of Material typography styles to start with
+val Typography = Typography(
+    bodyLarge = TextStyle(
+        fontFamily = FontFamily.Default,
+        fontWeight = FontWeight.Normal,
+        fontSize = 16.sp,
+        lineHeight = 24.sp,
+        letterSpacing = 0.5.sp
+    )
+    /* Other default text styles to override
+    titleLarge = TextStyle(
+        fontFamily = FontFamily.Default,
+        fontWeight = FontWeight.Normal,
+        fontSize = 22.sp,
+        lineHeight = 28.sp,
+        letterSpacing = 0.sp
+    ),
+    labelSmall = TextStyle(
+        fontFamily = FontFamily.Default,
+        fontWeight = FontWeight.Medium,
+        fontSize = 11.sp,
+        lineHeight = 16.sp,
+        letterSpacing = 0.5.sp
+    )
+    */
+)
+
+
+--- FILE: app/src/main/res/drawable/card_background.xml ---
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#CCFFFFFF" />
+    <corners android:radius="24dp" />
+</shape>
+
+
+
+--- FILE: app/src/main/res/drawable/ic_launcher_background.xml ---
+
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    android:height="108dp"
+    android:width="108dp"
+    android:viewportHeight="108"
+    android:viewportWidth="108"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#3DDC84"
+          android:pathData="M0,0h108v108h-108z"/>
+    <path android:fillColor="#00000000" android:pathData="M9,0L9,108"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M19,0L19,108"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M29,0L29,108"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M39,0L39,108"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M49,0L49,108"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M59,0L59,108"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M69,0L69,108"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M79,0L79,108"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M89,0L89,108"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M99,0L99,108"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M0,9L108,9"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M0,19L108,19"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M0,29L108,29"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M0,39L108,39"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M0,49L108,49"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M0,59L108,59"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M0,69L108,69"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M0,79L108,79"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M0,89L108,89"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M0,99L108,99"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M19,29L89,29"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M19,39L89,39"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M19,49L89,49"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M19,59L89,59"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M19,69L89,69"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M19,79L89,79"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M29,19L29,89"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M39,19L39,89"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M49,19L49,89"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M59,19L59,89"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M69,19L69,89"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+    <path android:fillColor="#00000000" android:pathData="M79,19L79,89"
+          android:strokeColor="#33FFFFFF" android:strokeWidth="0.8"/>
+</vector>
+
+
+
+--- FILE: app/src/main/res/drawable/ic_launcher_foreground.xml ---
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:pathData="M31,63.928c0,0 6.4,-11 12.1,-13.1c7.2,-2.6 26,-1.4 26,-1.4l38.1,38.1L107,108.928l-32,-1L31,63.928z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startY="49.59793"
+                android:startX="42.9492"
+                android:endY="92.4963"
+                android:endX="85.84757"
+                android:type="linear">
+                <item
+                    android:color="#44000000"
+                    android:offset="0.0" />
+                <item
+                    android:color="#00000000"
+                    android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:pathData="M65.3,45.828l3.8,-6.6c0.2,-0.4 0.1,-0.9 -0.3,-1.1c-0.4,-0.2 -0.9,-0.1 -1.1,0.3l-3.9,6.7c-6.3,-2.8 -13.4,-2.8 -19.7,0l-3.9,-6.7c-0.2,-0.4 -0.7,-0.5 -1.1,-0.3C38.8,38.328 38.7,38.828 38.9,39.228l3.8,6.6C36.2,49.428 31.7,56.028 31,63.928h46C76.3,56.028 71.8,49.428 65.3,45.828zM43.4,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2c-0.3,-0.7 -0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C45.3,56.528 44.5,57.328 43.4,57.328L43.4,57.328zM64.6,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2s-0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C66.5,56.528 65.6,57.328 64.6,57.328L64.6,57.328z"
+        android:fillColor="#FFFFFF"
+        android:fillType="nonZero"
+        android:strokeWidth="1"
+        android:strokeColor="#00000000"/>
+</vector>
+
+
+--- FILE: app/src/main/res/drawable/transparent_bg.xml ---
+
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/transparent" />
+</shape>
+
+
+
+--- FILE: app/src/main/res/font/troublemarker_font.xml ---
+
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <font
+        android:font="@font/troublemarker"
+        android:fontStyle="normal"
+        />
+
+</font-family>
+
+
+--- FILE: app/src/main/res/layout/activity_main.xml ---
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:alpha="1"
+    android:visibility="visible"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:contentDescription="@string/qr_code" />
+
+    <TextView
+        android:id="@+id/phoneText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone"
+        android:textSize="30sp"
+        android:fontFamily="@+font/troublemaker_font"
+        android:layout_marginTop="12dp"
+        android:textColor="@android:color/white"
+        />
+
+    <TextView
+        android:id="@+id/nhEnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nh_en"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/white"
+        android:textSize="60sp"
+        android:fontFamily="@+font/troublemaker_font"
+         />
+
+</LinearLayout>
+
+
+
+--- FILE: app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml ---
+
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@mipmap/ic_launcher_background"/>
+    <foreground android:drawable="@mipmap/ic_launcher_foreground"/>
+</adaptive-icon>
+
+
+--- FILE: app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml ---
+
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@mipmap/ic_launcher_background"/>
+    <foreground android:drawable="@mipmap/ic_launcher_foreground"/>
+</adaptive-icon>
+
+
+--- FILE: app/src/main/res/values/bools.xml ---
+
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <bool name="isTranslucent">true</bool>
+
+</resources>
+
+
+
+--- FILE: app/src/main/res/values/colors.xml ---
+
+<?xml version="1.0" encoding="utf-8"?>
+  <resources>
+      <color name="purple_200">#FFBB86FC</color>
+      <color name="purple_500">#FF6200EE</color>
+      <color name="purple_700">#FF3700B3</color>
+      <color name="teal_200">#FF03DAC5</color>
+      <color name="teal_700">#FF018786</color>
+      <color name="black">#FF000000</color>
+      <color name="white">#FFFFFFFF</color>
+  </resources>
+
+
+--- FILE: app/src/main/res/values/strings.xml ---
+
+<resources>
+    <string name="app_name">nhen</string>
+    <string name="phone">+1 504 457–83zZ</string>
+    <string name="nh_en">\@_nh_en</string>
+    <string name="qr_code">qr code</string>
+</resources>
+
+
+--- FILE: app/src/main/res/values/styles.xml ---
+
+<resources>
+    <style name="Theme.NhenStyle" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+</resources>
+
+
+
+--- FILE: app/src/main/res/values/themes.xml ---
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.Nhen.Transparent" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+</resources>
+
+
+
+--- FILE: app/src/main/res/xml/backup_rules.xml ---
+
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Sample backup rules file; uncomment and customize as necessary.
+   See https://developer.android.com/guide/topics/data/autobackup
+   for details.
+   Note: This file is ignored for devices older than API 31
+   See https://developer.android.com/about/versions/12/backup-restore
+-->
+<full-backup-content>
+<!--
+   <include domain="sharedpref" path="."/>
+   <exclude domain="sharedpref" path="device.xml"/>
+-->
+</full-backup-content>
+
+
+--- FILE: app/src/main/res/xml/data_extraction_rules.xml ---
+
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Sample data extraction rules file; uncomment and customize as necessary.
+   See https://developer.android.com/about/versions/12/backup-restore#xml-changes
+   for details.
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- TODO: Use <include> and <exclude> to control what is backed up.
+        <include .../>
+        <exclude .../>
+        -->
+    </cloud-backup>
+    <!--
+    <device-transfer>
+        <include .../>
+        <exclude .../>
+    </device-transfer>
+    -->
+</data-extraction-rules>
+
+
+--- FILE: app/src/test/java/com/hereliesaz/nhen/ExampleUnitTest.kt ---
+
+package com.hereliesaz.nhen
+
+  import org.junit.Test
+
+  import org.junit.Assert.*
+
+  /**
+   * Example local unit test, which will execute on the development machine (host).
+   *
+   * See [testing documentation](http://d.android.com/tools/testing).
+   */
+  class ExampleUnitTest {
+      @Test
+      fun addition_isCorrect() {
+          assertEquals(4, 2 + 2)
+      }
+  }
+
+
+--- NON-TEXT ASSET FILE LIST (from selected modules) ---
+
+- app/src/main/ic_launcher-playstore.png
+
+- app/src/main/res/drawable/nhen_logo.png
+
+- app/src/main/res/drawable/qr_code.png
+
+- app/src/main/res/font/troublemarker.otf
+
+- app/src/main/res/mipmap-hdpi/ic_launcher.webp
+
+- app/src/main/res/mipmap-hdpi/ic_launcher_background.webp
+
+- app/src/main/res/mipmap-hdpi/ic_launcher_foreground.webp
+
+- app/src/main/res/mipmap-hdpi/ic_launcher_round.webp
+
+- app/src/main/res/mipmap-mdpi/ic_launcher.webp
+
+- app/src/main/res/mipmap-mdpi/ic_launcher_background.webp
+
+- app/src/main/res/mipmap-mdpi/ic_launcher_foreground.webp
+
+- app/src/main/res/mipmap-mdpi/ic_launcher_round.webp
+
+- app/src/main/res/mipmap-xhdpi/ic_launcher.webp
+
+- app/src/main/res/mipmap-xhdpi/ic_launcher_background.webp
+
+- app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.webp
+
+- app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp
+
+- app/src/main/res/mipmap-xxhdpi/ic_launcher.webp
+
+- app/src/main/res/mipmap-xxhdpi/ic_launcher_background.webp
+
+- app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.webp
+
+- app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp
+
+- app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp
+
+- app/src/main/res/mipmap-xxxhdpi/ic_launcher_background.webp
+
+- app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.webp
+
+- app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp
+
+
+
+
+--- END OF BACKUP ---
+
