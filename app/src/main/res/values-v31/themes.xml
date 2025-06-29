@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Nhen.Transparent" parent="Theme.Nhen.Base">
+        <item name="android:windowBlurBehindEnabled">true</item>
+    </style>
+</resources>

@@ -3,6 +3,8 @@ package com.hereliesaz.nhen
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.animation.ObjectAnimator
+import android.content.ClipData
+import android.content.ClipboardManager
 import android.graphics.RenderEffect
 import android.graphics.Shader
 import android.os.Build
@@ -14,6 +16,7 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.res.ResourcesCompat
 import kotlin.random.Random
@@ -27,9 +30,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Set background blur radius if API level allows
+        // Set background blur radius if API level allows.
+        // Reverting to the deprecated method to resolve compilation issues.
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-            window.setBackgroundBlurRadius(100)
+            window.setBackgroundBlurRadius(80)
         }
 
         val rootLayout = findViewById<LinearLayout>(R.id.root_layout)
@@ -111,6 +115,12 @@ class MainActivity : AppCompatActivity() {
 
         } else {
             // --- Transition from Text to QR code ---
+
+            // Copy phone number to clipboard.
+            val clipboard = getSystemService(CLIPBOARD_SERVICE) as ClipboardManager
+            val clip = ClipData.newPlainText("phone number", phoneText.text)
+            clipboard.setPrimaryClip(clip)
+            Toast.makeText(this, "Phone number copied", Toast.LENGTH_SHORT).show()
 
             // "Disintegrate" the text views
             disintegrate(phoneText)
