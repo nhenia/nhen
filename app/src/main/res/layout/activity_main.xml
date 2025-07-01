@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:text="@string/phone"
         android:textSize="30sp"
-        android:fontFamily="@+font/troublemaker_font"
+        android:fontFamily="@font/troublemarker_font"
         android:layout_marginTop="12dp"
         android:textColor="@android:color/white"
         />
@@ -35,7 +35,7 @@
         android:layout_marginTop="8dp"
         android:textColor="@android:color/white"
         android:textSize="60sp"
-        android:fontFamily="@+font/troublemaker_font"
-         />
+        android:fontFamily="@font/troublemarker_font"
+        />
 
 </LinearLayout>
