@@ -1,183 +1,99 @@
 package com.hereliesaz.nhen
 
-import android.animation.Animator
-import android.animation.AnimatorListenerAdapter
-import android.animation.ObjectAnimator
-import android.content.*
 import android.os.Bundle
-import android.util.TypedValue
-import android.view.GestureDetector
-import android.view.MotionEvent
-import android.view.View
-import android.widget.ImageView
-import android.widget.LinearLayout
-import android.widget.TextView
-import android.widget.Toast
+import android.text.Editable
+import android.text.TextWatcher
+import android.widget.Button
+import android.widget.EditText
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.res.ResourcesCompat
-import kotlin.math.abs
-import kotlin.random.Random
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.chip.Chip
+import com.google.android.material.chip.ChipGroup
 
 class MainActivity : AppCompatActivity() {
 
-    private var isQrVisible = true
-    private lateinit var gestureDetector: GestureDetector
+    private lateinit var businessAdapter: BusinessAdapter
+    private val allBusinesses = BusinessData.allBusinesses
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        installSplashScreen()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val rootLayout = findViewById<LinearLayout>(R.id.root_layout)
-        val imageView = findViewById<ImageView>(R.id.imageView)
-        val phoneText = findViewById<TextView>(R.id.phoneText)
-        val nhEnText = findViewById<TextView>(R.id.nhEnText)
+        setupRecyclerView()
+        setupFilters()
+        setupSearch()
+        setupRandomizer()
+    }
 
-        // Explicitly hide the text views on creation to ensure they don't appear initially.
-        phoneText.visibility = View.GONE
-        nhEnText.visibility = View.GONE
+    private fun setupRecyclerView() {
+        val recyclerView: RecyclerView = findViewById(R.id.business_recycler_view)
+        businessAdapter = BusinessAdapter(allBusinesses)
+        recyclerView.adapter = businessAdapter
+    }
 
-        // Set image dimensions
-        val width = resources.displayMetrics.widthPixels
-        val imageSize = (width * 0.75).toInt()
-        imageView.layoutParams.width = imageSize
-        imageView.layoutParams.height = imageSize
-        imageView.requestLayout()
+    private fun setupFilters() {
+        val chipGroup: ChipGroup = findViewById(R.id.filter_chip_group)
+        val categories = listOf("All") + allBusinesses.map { it.category }.distinct()
+        val auras = allBusinesses.flatMap { it.auras }.distinct()
+        val filters = categories + auras
 
-        imageView.setImageResource(R.drawable.qr_code)
-
-        // Set custom font
-        val troublemakerFont = ResourcesCompat.getFont(this, R.font.troublemarker_font)
-
-        phoneText.apply {
-            text = getString(R.string.phone)
-            typeface = troublemakerFont
-            setTextSize(TypedValue.COMPLEX_UNIT_SP, 30f)
-        }
-
-        nhEnText.apply {
-            text = getString(R.string.nh_en)
-            typeface = troublemakerFont
-            setTextSize(TypedValue.COMPLEX_UNIT_SP, 60f)
-        }
-
-        // Setup gesture detection for both single taps and flings
-        gestureDetector = GestureDetector(this, object : GestureDetector.SimpleOnGestureListener() {
-            override fun onSingleTapUp(e: MotionEvent): Boolean {
-                toggleViews(imageView, phoneText, nhEnText)
-                return true
-            }
-
-            override fun onFling(e1: MotionEvent?, e2: MotionEvent, velocityX: Float, velocityY: Float): Boolean {
-                val rootLayout = findViewById<View>(R.id.root_layout)
-                val screenWidth = resources.displayMetrics.widthPixels.toFloat()
-                val screenHeight = resources.displayMetrics.heightPixels.toFloat()
-
-                // Determine the primary axis of the fling
-                val endX = if (abs(velocityX) > abs(velocityY)) {
-                    // Horizontal fling
-                    if (velocityX > 0) screenWidth else -screenWidth
-                } else {
-                    0f
+        filters.forEach { filterName ->
+            val chip = Chip(this).apply {
+                text = filterName
+                isCheckable = true
+                isCheckedIconVisible = false
+                setOnCheckedChangeListener { _, isChecked ->
+                    if (isChecked) {
+                        filterList(filterName)
+                    }
                 }
-
-                val endY = if (abs(velocityY) >= abs(velocityX)) {
-                    // Vertical fling
-                    if (velocityY > 0) screenHeight else -screenHeight
-                } else {
-                    0f
-                }
-
-                rootLayout.animate()
-                    .translationX(endX)
-                    .translationY(endY)
-                    .alpha(0f)
-                    .setDuration(250) // A quick exit
-                    .setListener(object : AnimatorListenerAdapter() {
-                        override fun onAnimationEnd(animation: Animator) {
-                            finish()
-                            // Disable the default activity transition animation to keep it clean
-                            overridePendingTransition(0, 0)
-                        }
-                    })
-                    .start()
-                return true
             }
+            chipGroup.addView(chip)
+        }
+        // Set "All" as the default selection
+        (chipGroup.getChildAt(0) as Chip).isChecked = true
+    }
+
+    private fun setupSearch() {
+        val searchInput: EditText = findViewById(R.id.search_input)
+        searchInput.addTextChangedListener(object : TextWatcher {
+            override fun afterTextChanged(s: Editable?) {
+                val query = s.toString().toLowerCase().trim()
+                val filteredList = allBusinesses.filter {
+                    it.name.toLowerCase().contains(query) || it.address.toLowerCase().contains(query)
+                }
+                businessAdapter.updateList(filteredList)
+            }
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
         })
-
-        // Set the touch listener on the root layout to capture all touch events
-        rootLayout.setOnTouchListener { _, event ->
-            gestureDetector.onTouchEvent(event)
-            true // Consume the event
-        }
     }
 
-    /**
-     * Toggles the visibility and animation between the QR code and the text views.
-     */
-    private fun toggleViews(imageView: ImageView, phoneText: TextView, nhEnText: TextView) {
-        if (isQrVisible) {
-            // --- Transition from QR code to Text ---
-            fade(imageView, 0f) {
-                imageView.visibility = View.INVISIBLE
+    private fun filterList(filter: String) {
+        val filtered = when (filter) {
+            "All" -> allBusinesses
+            in allBusinesses.map { it.category }.distinct() -> {
+                allBusinesses.filter { it.category == filter }
             }
-
-            phoneText.visibility = View.VISIBLE
-            nhEnText.visibility = View.VISIBLE
-            fade(phoneText, 1f)
-            fade(nhEnText, 1f)
-
-        } else {
-            // --- Transition from Text to QR code ---
-            val clipboard = getSystemService(CLIPBOARD_SERVICE) as ClipboardManager
-            val clip = ClipData.newPlainText("phone number", phoneText.text)
-            clipboard.setPrimaryClip(clip)
-            Toast.makeText(this, "Phone number copied", Toast.LENGTH_SHORT).show()
-
-            disintegrate(phoneText)
-            disintegrate(nhEnText) {
-                imageView.visibility = View.VISIBLE
-                fade(imageView, 1f)
+            else -> { // Assumes it's an aura filter
+                allBusinesses.filter { it.auras.contains(filter) }
             }
         }
-        isQrVisible = !isQrVisible
+        businessAdapter.updateList(filtered)
     }
 
-    /**
-     * Animates the alpha of a view.
-     */
-    private fun fade(view: View, toAlpha: Float, onEnd: (() -> Unit)? = null) {
-        ObjectAnimator.ofFloat(view, "alpha", view.alpha, toAlpha).apply {
-            duration = 500 // Animation duration in milliseconds
-            addListener(object : AnimatorListenerAdapter() {
-                override fun onAnimationEnd(animation: Animator) {
-                    onEnd?.invoke()
-                }
-            })
-            start()
+    private fun setupRandomizer() {
+        val randomizerButton: Button = findViewById(R.id.randomizer_button)
+        randomizerButton.setOnClickListener {
+            val randomBusiness = allBusinesses.random()
+            AlertDialog.Builder(this)
+                .setTitle(randomBusiness.name)
+                .setMessage(randomBusiness.address)
+                .setPositiveButton("OK", null)
+                .show()
         }
-    }
-
-    /**
-     * Creates a "disintegration" effect for a TextView.
-     */
-    private fun disintegrate(view: TextView, onEnd: (() -> Unit)? = null) {
-        view.animate()
-            .alpha(0f)
-            .translationYBy(Random.nextInt(-200, 200).toFloat())
-            .translationXBy(Random.nextInt(-200, 200).toFloat())
-            .rotation(Random.nextInt(-360, 360).toFloat())
-            .setDuration(700)
-            .setListener(object : AnimatorListenerAdapter() {
-                override fun onAnimationEnd(animation: Animator) {
-                    view.visibility = View.GONE
-                    // Reset properties
-                    view.alpha = 1f
-                    view.translationX = 0f
-                    view.translationY = 0f
-                    view.rotation = 0f
-                    onEnd?.invoke()
-                }
-            })
-            .start()
     }
 }
