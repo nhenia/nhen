@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var businessAdapter: BusinessAdapter
     private val allBusinesses = BusinessData.allBusinesses
+    private val businessCategories by lazy { allBusinesses.map { it.category }.distinct().toSet() }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         installSplashScreen()
@@ -36,7 +37,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupFilters() {
         val chipGroup: ChipGroup = findViewById(R.id.filter_chip_group)
-        val categories = listOf("All") + allBusinesses.map { it.category }.distinct()
+        val categories = listOf("All") + businessCategories
         val auras = allBusinesses.flatMap { it.auras }.distinct()
         val filters = categories + auras
 
@@ -75,7 +76,7 @@ class MainActivity : AppCompatActivity() {
     private fun filterList(filter: String) {
         val filtered = when (filter) {
             "All" -> allBusinesses
-            in allBusinesses.map { it.category }.distinct() -> {
+            in businessCategories -> {
                 allBusinesses.filter { it.category == filter }
             }
             else -> { // Assumes it's an aura filter
