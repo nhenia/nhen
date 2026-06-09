@@ -6,12 +6,18 @@ plugins {
 }
 
     android {
+        val properties = java.util.Properties()
+        val localPropertiesFile = rootProject.file("local.properties")
+        if (localPropertiesFile.exists()) {
+            properties.load(localPropertiesFile.inputStream())
+        }
+
     signingConfigs {
         getByName("debug") {
-            storeFile = file("G:\\My Drive\\az_apk_keystore.jks")
-            storePassword = "18187077190901818"
-            keyPassword = "18187077190901818"
-            keyAlias = "key0"
+            storeFile = properties.getProperty("debug.storeFile")?.let { file(it) }
+            storePassword = properties.getProperty("debug.storePassword")
+            keyPassword = properties.getProperty("debug.keyPassword")
+            keyAlias = properties.getProperty("debug.keyAlias")
         }
     }
         namespace = "com.hereliesaz.nhen"
